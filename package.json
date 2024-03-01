@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-ekyc",
+  "version": "0.1.0",
+  "description": "A sample for a new cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-ekyc",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testprocontact/cordova-plugin-ekyc.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "ekyc",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "FCI",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/testprocontact/cordova-plugin-ekyc/issues"
+  },
+  "homepage": "https://github.com/testprocontact/cordova-plugin-ekyc#readme"
+}
