@@ -1,0 +1,265 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Lien Nguyen on 21/09/2022.
+  
+*/
+
+"start" = "Bắt đầu";
+"err_common" = "Đã có lỗi xảy ra! Vui lòng thử lại sau!";
+"err_mrz" = "Đã có lỗi với MRZ. Xin vui lòng quét lại.";
+"err_parse_mrz" = "Không thể đọc MRZ. Xin vui lòng quét lại.";
+"err_NFC_session_busy" = "Phiên đọc NFC đang bận. Xin vui lòng thử lại!";
+"err_face_not_match" = "The face in video and document are not match, please record video again!";
+
+
+"reading" = "Đang đọc";
+"mess_keep_document_in_preselected_area" = "Xin hãy giữ giấy tờ trong vùng chọn";
+"mess_hold_the_top_of_your_iphone_near_nfc" = "Giữ phần đầu của điện thoại gần thẻ NFC";
+"mess_authenicating_with_mrz" = "Đang xác thực bằng MRZ.....\n\n";
+"err_tag_not_valid" = "Thẻ không hợp lệ.";
+"err_more_than_1_tag" = "Tìm thấy nhiều hơn 1 thẻ. Xin hãy cung cấp duy nhất 1 thẻ.";
+"err_connection" = "Lỗi kết nối. Xin vui lòng thử lại!";
+"err_mrz_not_valid" = "MRZ Key không hợp lệ với giấy tờ này.";
+"err_common_problem" = "Đã có lỗi xảy ra trong quá trình đọc thẻ, xin vui lòng thử lại!";
+"err_specific_problem" = "Đã có lỗi trong quá trình đọc thẻ.";
+"err_cannot_authen" = "Không thể xác thực thẻ lúc này. Xin vui lòng thử lại!";
+"read_card_successfully" = "Hoàn thành đọc thẻ.";
+"cannot_verify_card_info" = "Thông tin thẻ không hợp lệ!";
+"processing" = "Đang xử lý...";
+"mess_is_checking_document" = "Đang kiểm tra giấy tờ...";
+"err_no_camera_permission" = "FEKYC không có quyền sử dụng camera, xin hãy thay đổi quyền trong cài đặt.";
+"err_unable_capture" = "Không thể quay chụp";
+
+//api error
+"err_common_api" = "Kết nối gián đoạn.";
+"err_parse_json" = "Lỗi JSON.";
+
+//
+"title_take_selfie" = "ẢNH SELFIE";
+"title_liveness" = "LIVENESS";
+"title_passport" = "Thông tin hộ chiếu";
+"title_driveLicense" = "Thông tin giấy phép lái xe";
+"title_idcard" = "Thông tin căn cước công dân";
+"title_escape_button" = "Thoát";
+"title_settings"= "Cài đặt";
+//
+"text_idcard" = "Căn cước công dân";
+"text_idcard_front" = "Căn cước công dân (Mặt trước)";
+"text_idcard_back" = "Căn cước công dân (Mặt sau)";
+"text_license" = "Giấy phép lái xe";
+"text_license_back" = "Giấy phép lái xe (Mặt sau)";
+"text_license_front" = "Giấy phép lái xe (Mặt trước)";
+"text_front" = "Mặt trước";
+"text_back" = "Mặt sau";
+"text_selca" = "Chân dung";
+"text_profile" = "C06";
+
+"text_license" = "Giấy phép lái xe";
+"text_license_front_idn" = "SIM";
+"text_passport" = "Hộ chiếu";
+"text_is_validating" = "Đang xác thực...";
+
+"2_card" = "Xin hãy chắc chắn rằng bạn chỉ sử dụng một thẻ căn cước duy nhất trong quá trình eKYC";
+"2_faces_error" = "Có nhiều hơn một khuôn mặt trong khung hình, xin vui lòng thử lại.";
+"liveness_guide_1" = "Gần chút nữa";
+"liveness_guide_2" = "Không quay hai bên";
+"liveness_guide_3" = "Không quay lên xuống";
+"liveness_guide_4" = "Đưa mặt vào giữa";
+"liveness_guide_5" = "Có quá nhiều mặt";
+"liveness_guide_6" = "Xa chút nữa";
+"liveness_guide_7" = "Giữ nguyên nhé";
+"liveness_guide_8" = "Không nghiêng đầu";
+
+
+"let_s_try_again" = "Hãy Thử Lại";
+"we_need_to_clearer_video_selfie" = "Chúng tôi cần video rõ hơn";
+"try_agan" = "Thử Lại";
+"ekyc_your_selfie" = "Selfie";
+"key_close" = "Đóng";
+
+"fpt_ai_ekyc" = "FPT.AI eKYC";
+"home_start" = "Bắt đầu";
+"home_version" = "Phiên bản 3.0";
+"home_demo_chip_id" = "Demo Chip ID";
+"capture_front_card" = "Chụp mặt trước";
+"please_choose_ekyc" = "Vui lòng chọn loại eKYC";
+"completed" = "Hoàn thành";
+"check_id_card" = "Giấy tờ tùy thân";
+"verification_result" = "Kết quả Ocr";
+"recaptured" = "Giấy tờ tùy thân được chụp lại từ thiết bị điện tử.";
+"corner" = "Giấy tờ tùy thân bị chỉnh sửa.";
+"photocopied" = "Giấy tờ tùy thân là bản sao.";
+"retake_message" = "Xin vui lòng chụp lại.";
+"idcard_text" = "Giấy tờ tùy thân mặt trước và mặt sau";
+"record" = "Ghi hình";
+"submit" = "Gửi";
+"null_field" = "Giấy tờ tùy thân có trường thông tin bị bỏ trắng.";
+"id_format" = "Định dạng số định danh không đúng.";
+"dob_format" = "Định dạng ngày sinh không đúng.";
+"dob_is_later" = "Ngày sinh không hợp lệ";
+"doi_format" = "Định dạng ngày phát hành không đúng.";
+"doe_format" = "Dịnh dạng ngày hết hạn không đúng.";
+"doi_is_later" = "Ngày phát hành không hợp lệ.";
+"age_at_issue" = "Tuổi vào ngày phát hành giấy tờ không thể nhỏ hơn 14.";
+"extract_id" = "Không lấy được số định danh.";
+
+"find_province" = "Không tìm được mã địa phương.";
+"nationality" = "Quốc tịch không đúng.";
+"same_type" = "Phải chụp đủ hai mặt giấy tờ tùy thân. Mặt trước và mặt sau của giấy tờ tùy thân phải cùng loại (cũ hoặc mới).";
+"front_null_field" = "Giấy tờ tùy thân mặt trước có trường thông tin bị bỏ trống.";
+"been_expired" = "Giấy tờ tùy thân đã hết hạn sử dụng.";
+"year_in_dob" = "Năm sinh không khớp với số trong định danh.";
+"gender_code" = "Mã giới tính không khớp.";
+"years_15" = "Ngày hết hạn phải sau ngày phát hành 15 năm";
+"years_25" = "Ngày hết hạn phải là ngày sinh nhật năm 25 tuổi.";
+"years_40" = "Ngày hết hạn phải là ngày sinh nhật năm 40 tuổi.";
+"years_60" = "Ngày hết hạn phải là ngày sinh nhật năm 60 tuổi.";
+"years_limit" = "Ngày hết hạn không thể là KHÔNG THỜI HẠN.";
+"current_age" = "Tuổi hiện tại không thể nhỏ hơn 14.";
+"post_check_other_case" = "Giấy tờ tùy thân có thông tin không hợp lệ.";
+"invalid_case" = "Giấy tờ không hợp lệ.";
+"other_case" = "Không đọc được thông tin trên giấy tờ tùy thân.";
+
+"permission_deny_text" = "Required permissions denied. Exiting.";
+"text_idcard_idn" = "Identity card";
+"id_front_title" = "Căn cước công dân (Mặt trước)";
+"id_back_title" = "Căn cước công dân (Mặt sau)";
+"id_front_title_qr" = "Quét QRCode (Front)";
+"driver_front_title" = "Giấy phép lái xe (Mặt trước)";
+"driver_back_title" = "Giấy phép lái xe (Mặt sau)";
+"passport_title" = "Hộ chiếu";
+"capture_suggestion" = "Xin giữ giấy tờ trong vùng chụp";
+"next" = "Tiếp theo";
+"recapture" = "Chụp lại";
+"video_title" = "Quay video khuôn mặt";
+"video_suggestion1" = "Xin hãy giữ khuôn mặt nằm trong\nvùng quay";
+"video_instruction" = "Cử động khuôn măt khi ghi hình";
+"selfie_title" = "Chụp ảnh khuôn mặt";
+"selfie_suggestion1" = "Xin hãy giữ khuôn mặt nằm trong vùng chụp";
+"id_result_title" = "Thẻ căn cước công dân";
+"passport_result_tile" = "Hộ chiếu";
+"driver_license_result_title" = "Giấy phép lái xe";
+"front_tab_title" = "Mặt trước";
+"back_tab_title" = "Mặt sau";
+"face_tab_title" = "Ảnh";
+
+"required_perms_not_given" = "Lỗi: Quyền bị từ chối.";
+"required_nfc_not_supported" = "Lỗi: Thiết bị này không hỗ trợ NFC.";
+"settings" = "Cài đặt";
+"nfc_title" = "Đặt điện thoại của bạn lên trên CCCD";
+"warning_enable_nfc" = "Bạn cần mở NFC";
+"ready_to_scan" = "Sẵn sàng để quét";
+"ekyc_cancel" = "Bỏ Qua";
+"ekyc_processing" = "Đang xử lý…";
+"ekyc_processing_emir" = "Đang xử lý";
+"ekyc_scanning" = "Đang quét…";
+"ekyc_information" = "Thông tin";
+"label_id" = "Số/No:";
+"label_name" = "Họ và tên:";
+"label_date_of_birth" = "Ngày sinh:";
+"label_sex" = "Giới tính:";
+"label_nationality" = "Quốc tịch:";
+"label_religion" = "Tôn giáo:";
+"label_home" = "Quê quán:";
+"label_address" = "Địa chỉ:";
+"label_issue_date" = "Ngày cấp:";
+"label_expired_date" = "Ngày hết hạn:";
+"label_prev_number" = "Số định danh trước kia";
+"label_features" = "Đặc điểm nhận dạng:";
+"label_ethnicity" = "Dân tộc:";
+"label_issue_location" = "Nơi cấp:";
+"label_place_of_issue" = "Nơi cấp:";
+"label_passport_number" = "Số GCMND";
+"label_id_number" = "Số hộ chiếu:";
+"label_father_name" = "Tên bố:";
+"label_mother_name" = "Tên mẹ:";
+"label_partner_name" = "Tên vợ/chồng:";
+"label_verified" = "Verified";
+
+
+"step_11" = "Bước 1";
+"scan_mrz_behide_the_id_card" = "Đọc mã MRZ phía sau CCCD";
+"step_22" = "Bước 2 \n Đọc NFC";
+"read_nfc_tag" = "Đọc NFC";
+"scan_mrz_guide_line" = "Xin hãy giữ giấy tờ trong vùng chọn";
+"ekyc_reading" = "Đang đọc…";
+"ekyc_success" = "Thành công";
+"ekyc_error_occur" = "Có lỗi xảy ra";
+"error_hash_verify" = "Dữ liệu thẻ đã bị thay đổi";
+"ekyc_verified" = "Đã xác minh";
+"ekyc_not_verified" = "Chưa xác minh";
+"scan_nfc_without_mrz_error" = "Vui lòng thực hiện Bước 1 trước";
+"scan_nfc_done" = "Hoàn Thành";
+"ekyc_no_internet" = "Không có kết nối mạng.";
+"ekyc_no_connection" = "Kết nối bị gián đoạn.";
+"ekyc_version" = "Phiên bản";
+"no_internet_server_busy" = "Máy chủ đang bận, vui lòng thử lại.";
+"face_not_match" = "Mặt trong video và giấy tờ đã chụp không khớp, vui lòng quay lại!";
+"ekyc_error" = "Vui lòng thực hiện lại!";
+"ekyc_exit" = "Thoát";
+"no_glare_or_extreme_lighting" = "Tránh ánh đèn quá chói";
+"ekyc_uploading" = "Đang tải…";
+"accept_key" = "Đồng ý";
+"cancel_key" = "Bỏ qua";
+"access_cam" = "Ứng dụng cần được chấp nhận quyền mở camera để quét tài liệu";
+
+"key_complete" = "Hoàn thành";
+"liveness_title" = "Quay video khuôn mặt";
+"skip_key" = "Bỏ qua";
+"key_scan_mrz" = "Đọc mã MRZ phía sau CCCD";
+"key_step1" = "Bước 1";
+"key_step2" = "Bước 2";
+"key_read_nfc" = "Đọc thẻ NFC";
+"key_idcard" = "CMND/CCCD";
+"ekyc_uploading" = "Đang tải…";
+"text_ocr" = "Xác thực tài khoản";
+"text_backside" = "Mặt sau";
+"text_guide_backside" = "Vui lòng lật mặt sau của giấy tờ";
+"key_none_nfc" = "Thiết bị không hỗ trợ NFC";
+"key_next" = "Tiếp theo";
+"key_name" = "Họ và tên";
+"ekyc_fail" = "Ekyc thất bại";
+"my_image_key" = "Ảnh của bạn";
+"pose_key" = "Ảnh minh họa";
+"nation_key" = "Dân tộc";
+
+"id_key" = "Số/No";
+"name_key" = "Họ vào tên";
+"sex_key" = "Giới tính";
+"dob_key" = "Ngày sinh";
+"home_key" = "Quê quán";
+"address_key" = "Địa chỉ";
+"nationality_key" = "Quốc tịch";
+"features_key" = "Đặc điểm nhận dạng";
+"issue_date_key" = "Ngày phát hành";
+"religion_key" = "Tôn giáo";
+"mother_name_key" = "Họ tên mẹ";
+"father_name_key" = "Họ tên bố";
+"partner_name_key" = "Họ tên vợ/chồng";
+"press_key" = "Ấn";
+"descriptionManual_key" = "để chuyển chế độ quay thủ công";
+
+
+"ocr_wrong_key" = "Thiếu chi tiết";
+"ocr_tiny_key" = "Quá bé";
+"ocr_blur_key" = "Không rõ nét";
+"ocr_description_guide_key" = "Vui lòng chụp ảnh giấy tờ để xác thực thông tin của bạn";
+"ocr_title_wrong_key" = "Ảnh không hợp lệ nếu";
+"ocr_takepicture_key" = "Chụp ảnh";
+"ocr_title_guide_key" = "Giấy tờ tuỳ thân";
+
+"photo_title_guide_key" = "Chụp ảnh khuôn mặt";
+"photo_description_guide_key" = "Xin hãy giữ khuôn mặt nằm trong
+vùng chụp";
+"kyc_take_a_selfie"="Chụp ảnh chân dung";
+"kyc_guide_face_des"="Giữ khuôn mặt rõ nét bên trong khung hình";
+"kyc_take_a_selfie_title"="Xác thực khuôn mặt";
+"kyc_doc_verification_title"="Xác thực giấy tờ";
+
+"key_brightspot"="Bóng sáng";
+"key_centerpaper"="Đưa giấy tờ vào giữa";
+"key_takeback"="Chụp mặt sau";
+"key_takefront"="Chụp mặt trước";
+"key_id_wrong"="Giấy tờ chưa đúng";

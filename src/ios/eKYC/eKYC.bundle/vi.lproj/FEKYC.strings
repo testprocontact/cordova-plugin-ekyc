@@ -1,0 +1,140 @@
+
+/* Class = "UIButton"; normalTitle = "Mặt trước"; ObjectID = "0Iz-MI-Rh8"; */
+"0Iz-MI-Rh8.normalTitle" = "Mặt trước";
+
+/* Class = "UIButton"; configuration.title = "Close"; ObjectID = "2VD-AR-by6"; */
+"2VD-AR-by6.configuration.title" = "Huỷ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2VD-AR-by6"; */
+"2VD-AR-by6.normalTitle" = "Huỷ";
+
+/* Class = "UILabel"; text = "Version 1.0"; ObjectID = "3Og-oR-UFb"; */
+"3Og-oR-UFb.text" = "Version 1.0";
+
+/* Class = "UILabel"; text = "CMND/CCCD"; ObjectID = "6bP-3u-wgK"; */
+"6bP-3u-wgK.text" = "CMND/CCCD";
+
+/* Class = "UILabel"; text = "Xin hãy giữ giấy tờ trong vùng chụp"; ObjectID = "86M-Mf-93G"; */
+"86M-Mf-93G.text" = "Xin hãy giữ giấy tờ trong vùng chụp";
+
+/* Class = "UILabel"; text = "Vui lòng chọn loại eKYC"; ObjectID = "9JA-rQ-Hp0"; */
+"9JA-rQ-Hp0.text" = "Vui lòng chọn loại eKYC";
+
+/* Class = "UILabel"; text = "STEP 1:"; ObjectID = "9OI-kX-70J"; */
+"9OI-kX-70J.text" = "BƯỚC 1:";
+
+/* Class = "UILabel"; text = "Similarity:"; ObjectID = "9Wy-hs-CtC"; */
+"9Wy-hs-CtC.text" = "Similarity:";
+
+/* Class = "UIButton"; normalTitle = "Tiếp tục"; ObjectID = "ABr-7g-x5l"; */
+"ABr-7g-x5l.normalTitle" = "Tiếp tục";
+
+/* Class = "UILabel"; text = "Quay video khuôn mặt"; ObjectID = "B17-hq-Lou"; */
+"B17-hq-Lou.text" = "Quay video khuôn mặt";
+
+/* Class = "UILabel"; text = "FPT.AI eKYC"; ObjectID = "C4i-w7-J66"; */
+"C4i-w7-J66.text" = "FPT.AI eKYC";
+
+/* Class = "UIButton"; normalTitle = "Tiếp tục"; ObjectID = "FIo-dZ-nx3"; */
+"FIo-dZ-nx3.normalTitle" = "Tiếp tục";
+
+/* Class = "UILabel"; text = "FPT.AI eKYC"; ObjectID = "Igg-2A-gFu"; */
+"Igg-2A-gFu.text" = "FPT.AI eKYC";
+
+/* Class = "UILabel"; text = "Read NFC Tag"; ObjectID = "JOm-fO-3iB"; */
+"JOm-fO-3iB.text" = "Read NFC Tag";
+
+/* Class = "UILabel"; text = "Căn cước công dân (Mặt trước)"; ObjectID = "N5A-SO-ohu"; */
+"N5A-SO-ohu.text" = "Căn cước công dân (Mặt trước)";
+
+/* Class = "UIButton"; configuration.title = "Complete"; ObjectID = "PCy-th-dLE"; */
+"PCy-th-dLE.configuration.title" = "Hoàn thành";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PCy-th-dLE"; */
+"PCy-th-dLE.normalTitle" = "Hoàn thành";
+
+/* Class = "UILabel"; text = "Quay video khuôn mặt"; ObjectID = "Pqz-Ze-DsQ"; */
+"Pqz-Ze-DsQ.text" = "Quay video khuôn mặt";
+
+/* Class = "UIButton"; normalTitle = "Chụp lại"; ObjectID = "QX4-pq-5VG"; */
+"QX4-pq-5VG.normalTitle" = "Chụp lại";
+
+/* Class = "UILabel"; text = "Submitted Successfully"; ObjectID = "Qn9-3S-V7z"; */
+"Qn9-3S-V7z.text" = "Submitted Successfully";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Tee-Fb-phw"; */
+"Tee-Fb-phw.text" = "Title";
+
+/* Class = "UILabel"; text = "Bằng lái xe"; ObjectID = "UfT-e6-voq"; */
+"UfT-e6-voq.text" = "Bằng lái xe";
+
+/* Class = "UIButton"; normalTitle = "Ảnh CC"; ObjectID = "UnL-3F-5mT"; */
+"UnL-3F-5mT.normalTitle" = "C06";
+
+/* Class = "UILabel"; text = "Xin hãy giữ khuôn mặt nằm trong\nvùng chụp"; ObjectID = "WzJ-Vg-dhZ"; */
+"WzJ-Vg-dhZ.text" = "Xin hãy giữ khuôn mặt nằm trong\nvùng chụp";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "Xtr-Jw-S9v"; */
+"Xtr-Jw-S9v.normalTitle" = "1";
+
+/* Class = "UILabel"; text = "True"; ObjectID = "Yur-pA-Syr"; */
+"Yur-pA-Syr.text" = "True";
+
+/* Class = "UIButton"; normalTitle = "DONE"; ObjectID = "Zzj-43-46G"; */
+"Zzj-43-46G.normalTitle" = "XONG";
+
+/* Class = "UILabel"; text = "Version 1.0"; ObjectID = "b5R-Vh-5TP"; */
+"b5R-Vh-5TP.text" = "Version 1.0";
+
+/* Class = "UIButton"; normalTitle = "Chân dung"; ObjectID = "cWb-vH-DIo"; */
+"cWb-vH-DIo.normalTitle" = "Selfie";
+
+/* Class = "UILabel"; text = "STEP 2:"; ObjectID = "e6F-IS-dwV"; */
+"e6F-IS-dwV.text" = "BƯỚC 2:";
+
+/* Class = "UILabel"; text = "Hộ chiếu"; ObjectID = "fXb-EI-mb6"; */
+"fXb-EI-mb6.text" = "Hộ chiếu";
+
+/* Class = "UILabel"; text = "Detail Information"; ObjectID = "gpw-I4-ric"; */
+"gpw-I4-ric.text" = "Detail Information";
+
+/* Class = "UIButton"; normalTitle = "Chụp lại"; ObjectID = "gxw-Yq-Wf3"; */
+"gxw-Yq-Wf3.normalTitle" = "Chụp lại";
+
+/* Class = "UILabel"; text = "True"; ObjectID = "jfD-I1-0Cj"; */
+"jfD-I1-0Cj.text" = "True";
+
+/* Class = "UILabel"; text = "Checking API Key..."; ObjectID = "lQM-Vg-f9i"; */
+"lQM-Vg-f9i.text" = "Checking API Key...";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "lWX-zp-iAi"; */
+"lWX-zp-iAi.normalTitle" = "GỬI ĐI";
+
+/* Class = "UILabel"; text = "Scan MRZ behide the ID Card"; ObjectID = "nR4-e1-9DR"; */
+"nR4-e1-9DR.text" = "Scan MRZ behide the ID Card";
+
+/* Class = "UILabel"; text = "Liveness:"; ObjectID = "ote-Vm-sTF"; */
+"ote-Vm-sTF.text" = "Liveness:";
+
+/* Class = "UIButton"; normalTitle = "Mặt sau"; ObjectID = "pjn-cq-fxn"; */
+"pjn-cq-fxn.normalTitle" = "Mặt sau";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "qeI-n9-Fcz"; */
+"qeI-n9-Fcz.text" = "Title";
+
+/* Class = "UILabel"; text = "99%"; ObjectID = "tJH-Ee-i2n"; */
+"tJH-Ee-i2n.text" = "99%";
+
+/* Class = "UILabel"; text = "Xin hãy giữ khuôn mặt nằm trong\nvùng chụp"; ObjectID = "v4V-4k-jzQ"; */
+"v4V-4k-jzQ.text" = "Xin hãy giữ khuôn mặt nằm trong\nvùng chụp";
+
+/* Class = "UILabel"; text = "FaceMatch:"; ObjectID = "yX7-wa-voP"; */
+"yX7-wa-voP.text" = "FaceMatch:";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "zBd-SW-Kw4"; */
+"zBd-SW-Kw4.normalTitle" = "2";
+
+"SZN-W7-vMz.text" = "Quay video khuôn mặt";
+
+"i90-fd-zDv.text" = "Xin hãy giữ khuôn mặt nằm trong vùng quay";
+

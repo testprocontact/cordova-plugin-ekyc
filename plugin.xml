@@ -31,15 +31,11 @@
   </platform>
 
   <platform name="ios">
-    
-    <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
+	<podspec>
+      <pods use-frameworks="true">
+        <pod name="eKYC" options=":path => '/Users/nguyentuyen/Desktop/myDemoProject2/plugins/com.fci.ekyc/src/ios/eKYC'"/>
+      </pods>
+    </podspec>
   </platform>
 
   <platform name="wp7">

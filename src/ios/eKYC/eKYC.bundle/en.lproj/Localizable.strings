@@ -1,0 +1,262 @@
+/*
+  Localizable.strings
+  Pods
+
+  Created by Lien Nguyen on 21/09/2022.
+  
+*/
+
+"start" = "START";
+"err_common" = "An error occurred, please try again later!";
+"err_mrz" = "There is an error with MRZ. Please scan again.";
+"err_parse_mrz" = "Cannot parse MRZ. Please scan again.";
+"err_NFC_session_busy" = "NFC reader session is busy. Please try again!";
+"err_face_not_match" = "Mặt trong video và giấy tờ đã chụp không khớp, vui lòng quay lại!";
+
+"reading" = "Reading";
+"mess_keep_document_in_preselected_area" = "Please keep the document in the preselected area";
+"mess_hold_the_top_of_your_iphone_near_nfc" = "Hold the top of your iPhone near the NFC chip.";
+"mess_authenicating_with_mrz" = "Authenticating with MRZ.....\n\n";
+"err_tag_not_valid" = "Tag not valid.";
+"err_more_than_1_tag" = "More than 1 tags was found. Please present only 1 tag.";
+"err_connection" = "Connection error. Please try again.";
+"err_mrz_not_valid" = "MRZ Key not valid for this document.";
+"err_common_problem" = "Sorry, there was a problem reading the identity card. Please try again!";
+"err_specific_problem" = "Sorry, there was a problem reading the chip.";
+"err_cannot_authen" = "Sorry, cannot authenticate this tag right now. Please try again!";
+"read_card_successfully" = "Identity card read successfully";
+"cannot_verify_card_info" = "Invalid signature in the chip";
+"processing" = "Processing...";
+"mess_is_checking_document" = "We are validating your document photo...";
+"err_no_camera_permission" = "FEKYC doesn't have permission to use the camera, please change privacy settings";
+"err_unable_capture" = "Unable to capture media";
+
+"err_common_api" = "Server busy.";
+"err_parse_json" = "JSON paring error.";
+
+//
+"title_take_selfie" = "TAKE SELFIE";
+"title_liveness" = "LIVENESS";
+"title_passport" = "Passport";
+"title_driveLicense" = "Infomation drive's license";
+"title_idcard" = "Identity card";
+"title_escape_button" = "Exit";
+"title_settings"= "Settings";
+
+"nation_key" = "Ethnicity";
+
+//
+"text_idcard_idn" = "KTP";
+"text_idcard" = "Identity card";
+"text_idcard_front" = "Identity card (Front)";
+"text_idcard_back" = "Identity card (Back)";
+"text_license" = "Driving license";
+"text_license_back" = "Driving license (Back)";
+"text_license_front" = "Driving license (Front)";
+"text_license_front_idn" = "SIM";
+"text_license" = "Driving license";
+"text_passport" = "Passport";
+"text_is_validating" = "We are validating...";
+"text_front" = "Front";
+"text_back" = "Back";
+"text_selca" = "Selfie";
+"text_profile" = "C06";
+
+"2_card" = "Please make sure you only use one ID card during the eKYC process";
+"2_faces_error" = "There is more than one face in the frame, please try again.";
+"liveness_guide_1" = "Move Closer";
+"liveness_guide_2" = "Look Straight";
+"liveness_guide_3" = "Look Straight";
+"liveness_guide_4" = "Face center";
+"liveness_guide_5" = "Too Many Face";
+"liveness_guide_6" = "Move Further";
+"liveness_guide_7" = "Hold Steady";
+"liveness_guide_8" = "Face center";
+
+"let_s_try_again" = "Let's try that again";
+"we_need_to_clearer_video_selfie" = "We Need Clearer Video Selfie";
+"try_agan" = "Try Again";
+"ekyc_your_selfie" = "Selfie";
+"key_close" = "Close";
+
+"fpt_ai_ekyc" = "FPT.AI eKYC";
+"home_start" = "Start";
+"home_version" = "Version";
+"home_demo_chip_id" = "Demo Chip ID";
+"capture_front_card" = "Capture the front";
+"please_choose_ekyc" = "Please select type of eKYC";
+"completed" = "Complete";
+"check_id_card" = "ID document";
+"verification_result" = "Ocr Results";
+"recaptured" = "Giấy tờ tùy thân được chụp lại từ thiết bị điện tử.";
+"corner" = "Giấy tờ tùy thân bị chỉnh sửa.";
+"photocopied" = "Giấy tờ tùy thân là bản sao.";
+"retake_message" = "Xin vui lòng chụp lại.";
+"idcard_text" = "Giấy tờ tùy thân mặt trước và mặt sau";
+"record" = "Recording";
+"submit" = "Submit";
+"null_field" = "Giấy tờ tùy thân có trường thông tin bị bỏ trắng.";
+"id_format" = "Định dạng số định danh không đúng.";
+"dob_format" = "Định dạng ngày sinh không đúng.";
+"dob_is_later" = "Ngày sinh không hợp lệ";
+"doi_format" = "Định dạng ngày phát hành không đúng.";
+"doe_format" = "Dịnh dạng ngày hết hạn không đúng.";
+"doi_is_later" = "Ngày phát hành không hợp lệ.";
+"age_at_issue" = "Tuổi vào ngày phát hành giấy tờ không thể nhỏ hơn 14.";
+"extract_id" = "Không lấy được số định danh.";
+
+"find_province" = "Không tìm được mã địa phương.";
+"nationality" = "Quốc tịch không đúng.";
+"same_type" = "Phải chụp đủ hai mặt giấy tờ tùy thân. Mặt trước và mặt sau của giấy tờ tùy thân phải cùng loại (cũ hoặc mới).";
+"front_null_field" = "Giấy tờ tùy thân mặt trước có trường thông tin bị bỏ trống.";
+"been_expired" = "Giấy tờ tùy thân đã hết hạn sử dụng.";
+"year_in_dob" = "Năm sinh không khớp với số trong định danh.";
+"gender_code" = "Mã giới tính không khớp.";
+"years_15" = "Ngày hết hạn phải sau ngày phát hành 15 năm";
+"years_25" = "Ngày hết hạn phải là ngày sinh nhật năm 25 tuổi.";
+"years_40" = "Ngày hết hạn phải là ngày sinh nhật năm 40 tuổi.";
+"years_60" = "Ngày hết hạn phải là ngày sinh nhật năm 60 tuổi.";
+"years_limit" = "Ngày hết hạn không thể là KHÔNG THỜI HẠN.";
+"current_age" = "Tuổi hiện tại không thể nhỏ hơn 14.";
+"post_check_other_case" = "Giấy tờ tùy thân có thông tin không hợp lệ.";
+"invalid_case" = "Giấy tờ không hợp lệ.";
+"other_case" = "Không đọc được thông tin trên giấy tờ tùy thân.";
+
+"permission_deny_text" = "Required permissions denied. Exiting.";
+"id_front_title" = "Căn cước công dân (Mặt trước)";
+"id_back_title" = "Căn cước công dân (Mặt sau)";
+"id_front_title_qr" = "Quét QRCode (Front)";
+"driver_front_title" = "Giấy phép lái xe (Mặt trước)";
+"driver_back_title" = "Giấy phép lái xe (Mặt sau)";
+"passport_title" = "Hộ chiếu";
+"capture_suggestion" = "Please keep document in camera area";
+"next" = "Next";
+"recapture" = "Take again";
+"video_title" = "Record your face";
+"video_suggestion1" = "Please keep your face in \ncamera area";
+"video_instruction" = "Cử động khuôn măt khi ghi hình";
+"selfie_title" = "Chụp ảnh khuôn mặt";
+"selfie_suggestion1" = "Please keep your face in camera area";
+"id_result_title" = "ID";
+"passport_result_tile" = "Hộ chiếu";
+"driver_license_result_title" = "Giấy phép lái xe";
+"front_tab_title" = "Mặt trước";
+"back_tab_title" = "Mặt sau";
+"face_tab_title" = "Ảnh";
+
+"required_perms_not_given" = "Lỗi: Quyền bị từ chối.";
+"required_nfc_not_supported" = "Lỗi: Thiết bị này không hỗ trợ NFC.";
+"settings" = "Cài đặt";
+"nfc_title" = "Đặt điện thoại của bạn lên trên CCCD";
+"warning_enable_nfc" = "Bạn cần mở NFC";
+"ready_to_scan" = "Sẵn sàng để quét";
+"ekyc_cancel" = "Bỏ Qua";
+"ekyc_processing" = "Processing…";
+"ekyc_processing_emir" = "Processing";
+"ekyc_scanning" = "Đang quét…";
+"ekyc_information" = "Thông tin";
+"label_id" = "Số/No:";
+"label_name" = "Họ và tên:";
+"label_date_of_birth" = "Ngày sinh:";
+"label_sex" = "Giới tính:";
+"label_nationality" = "Quốc tịch:";
+"label_religion" = "Tôn giáo:";
+"label_home" = "Quê quán:";
+"label_address" = "Địa chỉ:";
+"label_issue_date" = "Ngày cấp:";
+"label_expired_date" = "Ngày hết hạn:";
+"label_prev_number" = "Previous identification number:";
+"label_features" = "Đặc điểm nhận dạng:";
+"label_ethnicity" = "Dân tộc:";
+"label_issue_location" = "Nơi cấp:";
+"label_place_of_issue" = "Nơi cấp:";
+"label_passport_number" = "Số GCMND";
+"label_id_number" = "Số hộ chiếu:";
+"label_father_name" = "Tên bố:";
+"label_mother_name" = "Tên mẹ:";
+"label_partner_name" = "Tên vợ/chồng:";
+"label_verified" = "Verified:";
+
+
+"step_11" = "Bước 1";
+"scan_mrz_behide_the_id_card" = "Đọc mã MRZ phía sau CCCD";
+"step_22" = "Bước 2 \n Đọc NFC";
+"read_nfc_tag" = "Đọc NFC";
+"scan_mrz_guide_line" = "Please keep the documents in the selection";
+"ekyc_reading" = "Đang đọc…";
+"ekyc_success" = "Thành công";
+"ekyc_error_occur" = "Có lỗi xảy ra";
+"error_hash_verify" = "Dữ liệu thẻ đã bị thay đổi";
+"ekyc_verified" = "Đã xác minh";
+"ekyc_not_verified" = "Chưa xác minh";
+"scan_nfc_without_mrz_error" = "Vui lòng thực hiện Bước 1 trước";
+"scan_nfc_done" = "Hoàn Thành";
+"ekyc_no_internet" = "Không có kết nối mạng.";
+"ekyc_no_connection" = "Kết nối bị gián đoạn.";
+"ekyc_version" = "Phiên bản";
+"no_internet_server_busy" = "Máy chủ đang bận, vui lòng thử lại.";
+"face_not_match" = "Mặt trong video và giấy tờ đã chụp không khớp, vui lòng quay lại!";
+"ekyc_error" = "Vui lòng thực hiện lại!";
+"ekyc_exit" = "Exit";
+"no_glare_or_extreme_lighting" = "Tránh ánh đèn quá chói";
+"ekyc_uploading" = "Uploading…";
+"accept_key" = "Accept";
+"cancel_key" = "Cancel";
+"access_cam" = "My app need camera access to scan document";
+
+"key_complete" = "Complete";
+"liveness_title" = "Record of face";
+"skip_key" = "Skip";
+"key_scan_mrz" = "Scan MRZ behide the ID Card";
+"key_step1" = "Step 1";
+"key_step2" = "Step 2";
+"key_read_nfc" = "Read NFC Tag";
+"key_idcard" = "ID Card";
+"ekyc_uploading" = "Uploading…";
+"text_ocr" = "Account Verification";
+"text_backside" = "Backsize";
+"text_guide_backside" = "Please turn the back of the document";
+"key_none_nfc" = "Devices that do not support NFC";
+"key_next" = "Next";
+"key_name" = "Name";
+"ekyc_fail" = "Ekyc failed";
+"my_image_key" = "Your Selfie";
+"pose_key" = "Ideal Pose";
+
+"id_key" = "ID";
+"name_key" = "Name";
+"sex_key" = "Sex";
+"dob_key" = "Date of birth";
+"home_key" = "Home";
+"address_key" = "Address";
+"nationality_key" = "Nationality";
+"features_key" = "Features";
+"issue_date_key" = "Issue Date";
+"religion_key" = "Religion";
+"mother_name_key" = "Mother Name";
+"father_name_key" = "Father Name";
+"partner_name_key" = "Partner Name";
+"press_key" = "Press";
+"descriptionManual_key" = "to switch to manual recording mode";
+
+
+"ocr_wrong_key" = "Lack Of Detail";
+"ocr_tiny_key" = "Small";
+"ocr_blur_key" = "Not Clear";
+"ocr_description_guide_key" = "Please take document photo to verify your information";
+"ocr_title_wrong_key" = "Photo not invalid";
+"ocr_takepicture_key" = "Take Photo";
+"ocr_title_guide_key" = "Giấy tờ tuỳ thân";
+
+"photo_title_guide_key" = "Face photography";
+"photo_description_guide_key" = "Please keep your face in the recording area";
+"kyc_take_a_selfie"="Take a Selfie";
+"kyc_guide_face_des"="The image should be clear and have your face fully inside the frame";
+"kyc_take_a_selfie_title"="Face Verification";
+"kyc_doc_verification_title"="Document Verification";
+
+"key_brightspot"="Bright spot";
+"key_centerpaper"="Put the papers in the middle";
+"key_takeback"="Take a photo of the back";
+"key_takefront"="Take a photo of the front";
+"key_id_wrong"="Invalid Document";
