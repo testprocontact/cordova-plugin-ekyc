@@ -31,11 +31,21 @@
   </platform>
 
   <platform name="ios">
-	<podspec>
+      
+      <header-file src="src/ios/Ekyc.h" target-dir="eKYCPlugin"/>
+      <source-file src="src/ios/Ekyc.m" target-dir="eKYCPlugin"/>
+      
+      <config-file target="config.xml" parent="/widget">
+            <feature name="Ekyc">
+              <param name="ios-package" value="Ekyc" />
+            </feature>
+          </config-file>
+    <podspec>
       <pods use-frameworks="true">
-        <pod name="eKYC" options=":path => '/Users/nguyentuyen/Desktop/myDemoProject2/plugins/com.fci.ekyc/src/ios/eKYC'"/>
+        <pod name="eKYC" options=":path => '/Users/nguyentuyen/Desktop/Project Cordova/myDemoProject2/plugins/com.fci.ekyc/src/ios/eKYC'"/>
       </pods>
     </podspec>
+    
   </platform>
 
   <platform name="wp7">
