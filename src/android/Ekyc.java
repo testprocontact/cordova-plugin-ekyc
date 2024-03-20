@@ -7,6 +7,9 @@ import com.fpt.fci.ekycfull.EkycResult;
 import com.fpt.fci.ekycfull.domain.BaseConfig;
 import com.fpt.fci.ekycfull.presentation.view.EkycActivity;
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -14,6 +17,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.UUID;
 
@@ -57,7 +61,18 @@ public class Ekyc extends CordovaPlugin {
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
         if (resultCode == Activity.RESULT_OK) {
-            this.callbackContext.success(new Gson().toJson(EkycResult.INSTANCE.getOcrData()));
+            String front = intent.getStringExtra(BaseConfig.ReturnParamType.FRONT_FILE_PATH.name());
+            String back = intent.getStringExtra(BaseConfig.ReturnParamType.BACK_FILE_PATH.name());
+            String selfie = intent.getStringExtra(BaseConfig.ReturnParamType.SELFIE_FILE_PATH.name());
+            String video = intent.getStringExtra(BaseConfig.ReturnParamType.VIDEO_FILE_PATH.name());
+            Gson gson = new Gson();
+            JsonElement jsonElement = gson.toJsonTree(EkycResult.INSTANCE.getOcrData());
+            JsonObject jsonObject = jsonElement.getAsJsonObject();
+            jsonObject.addProperty("front", front);
+            jsonObject.addProperty("back", back);
+            jsonObject.addProperty("selfie", selfie);
+            jsonObject.addProperty("video", video);
+            this.callbackContext.success(jsonObject.toString());
         }
     }
 
