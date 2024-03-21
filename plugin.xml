@@ -36,6 +36,8 @@
       
       <header-file src="src/ios/Ekyc.h" target-dir="eKYCPlugin"/>
       <source-file src="src/ios/Ekyc.m" target-dir="eKYCPlugin"/>
+	  <source-file src="src/ios/SunLifeNewText-Bold.ttf" target-dir="eKYCPlugin"/>
+	  <source-file src="src/ios/SunLifeNewText-Regular.ttf" target-dir="eKYCPlugin"/>
       
       <config-file target="config.xml" parent="/widget">
             <feature name="Ekyc">
