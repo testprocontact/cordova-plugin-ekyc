@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name eKYC
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name eKYC
 import AVFoundation
 import AVKit
 import Accelerate
@@ -25,6 +24,7 @@ import UIKit
 import Vision
 import VisionKit
 import _Concurrency
+import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_exported import eKYC
@@ -643,11 +643,11 @@ public struct MultipartRequest {
   public var livenessType: Swift.Int?
   public var ocrTypes: [eKYC.FEKYCOcrType]
   public var isShowResult: Swift.Bool?
-  public var isReturnPhoto: Swift.Bool?
   public var themeColor: UIKit.UIColor
   public var currentOcrType: eKYC.FEKYCOcrType?
   public var submitResult: Swift.Bool?
   public var onlyDoccument: Swift.Bool?
+  public var breakFlow: Swift.Bool?
   public var nfcHasLiveness: Swift.Bool?
   public var isScanMrz: Swift.Bool?
   public var isFullFlow: Swift.Bool?
@@ -656,12 +656,11 @@ public struct MultipartRequest {
   public var mainStoryboard: Swift.String?
   public var documentData: [[Swift.String : Any]]?
   public var customInfo: [Swift.String : Any]?
-  public var customFont: [Swift.String : Any]?
   public var sessionId: Swift.String?
   public var livenessWithoutBE: Swift.Bool?
-  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, isShowResult: Swift.Bool = false, isReturnPhoto: Swift.Bool = false, themeColor: UIKit.UIColor? = nil, submitResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", mainStoryboard: Swift.String = "MyStoryBoard", customInfo: [Swift.String : Any]? = [:], customFont: [Swift.String : Any]? = [:])
-  @objc public init(apiKey: Swift.String, privateKey: Swift.String = "", flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, isShowResult: Swift.Bool = false, isReturnPhoto: Swift.Bool = false, themeColor: UIKit.UIColor? = nil, submitResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", mainStoryboard: Swift.String = "MyStoryBoard", customInfo: [Swift.String : Any]? = [:], customFont: [Swift.String : Any]? = [:])
-  public init(apiKey: Swift.String, privateKey: Swift.String, ocrTypes: Foundation.NSArray = [], isShowResult: Swift.Bool = true, themeColor: UIKit.UIColor? = nil, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, isScanMrz: Swift.Bool? = true, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [], mainStoryboard: Swift.String = "MyStoryBoard")
+  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, themeColor: UIKit.UIColor? = nil, submitResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", mainStoryboard: Swift.String = "MyStoryBoard", customInfo: [Swift.String : Any]? = [:])
+  @objc public init(apiKey: Swift.String, flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, themeColor: UIKit.UIColor? = nil, submitResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", mainStoryboard: Swift.String = "MyStoryBoard", customInfo: [Swift.String : Any]? = [:])
+  public init(apiKey: Swift.String, ocrTypes: Foundation.NSArray = [], isShowResult: Swift.Bool = true, themeColor: UIKit.UIColor? = nil, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, isScanMrz: Swift.Bool? = true, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [], mainStoryboard: Swift.String = "MyStoryBoard")
   @objc deinit
 }
 public struct FEKYCColor {
@@ -701,6 +700,7 @@ public struct FEKYCColor {
   case emir
   case sendo
   case vuiapp
+  case sunlife
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

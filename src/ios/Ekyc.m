@@ -18,10 +18,15 @@
 
     NSArray *ocrTypes = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:docType], nil];
     
-    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"1" isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO isShowResult:YES isReturnPhoto:NO themeColor:nil submitResult:NO nfcHasLiveness:NO language:@"vi" countryCode:@"vn" mainStoryboard:@"" customInfo:nil customFont:nil];
-
+    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO themeColor:[UIColor colorWithRed:0/255 green:57/255 blue:70/255 alpha:1.0] submitResult:NO nfcHasLiveness:NO language:@"vi" countryCode:@"vi" mainStoryboard:@"" customInfo:nil];
+    
     [FEKYC startFPTEKYCFlowWithConfig:config from:self.viewController completion:^(NSDictionary<NSString *,id> * _Nullable result) {
-        NSLog(@"result:%@",result);
+        NSString *facematch = [NSString stringWithFormat:@"%@",[result valueForKey:@"facematch"]];
+        if (![facematch isEqualToString:@"(null)"] && facematch != nil) {
+            [self.viewController removeFromParentViewController];
+            CDVPluginResult* resultCordova = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[result description]];
+            [self.commandDelegate sendPluginResult:resultCordova callbackId:command.callbackId];
+        }
     }];
 }
 
