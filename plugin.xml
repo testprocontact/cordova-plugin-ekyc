@@ -33,27 +33,20 @@
   </platform>
 
   <platform name="ios">
-      
-      <header-file src="src/ios/Ekyc.h" target-dir="eKYCPlugin"/>
-      <source-file src="src/ios/Ekyc.m" target-dir="eKYCPlugin"/>
-	  <source-file src="src/ios/SunLifeNewText-Bold.ttf" target-dir="eKYCPlugin"/>
-	  <source-file src="src/ios/SunLifeNewText-Regular.ttf" target-dir="eKYCPlugin"/>
-      
-      <config-file target="config.xml" parent="/widget">
-            <feature name="Ekyc">
-              <param name="ios-package" value="Ekyc" />
-            </feature>
-          </config-file>
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Ekyc">
+		<param name="ios-package" value="Ekyc" />
+      </feature>
+    </config-file>
+	<header-file src="src/ios/Ekyc.h" target-dir="eKYCPlugin"/>
+    <source-file src="src/ios/Ekyc.m" target-dir="eKYCPlugin"/>
+	<source-file src="src/ios/SunLifeNewText-Bold.ttf" target-dir="eKYCPlugin"/>
+	<source-file src="src/ios/SunLifeNewText-Regular.ttf" target-dir="eKYCPlugin"/>
     <podspec>
       <pods use-frameworks="true">
         <pod name="eKYC" options=":path => '/Users/nguyentuyen/Desktop/Project Cordova/myDemoProject2/plugins/com.fci.ekyc/src/ios/eKYC'"/>
       </pods>
     </podspec>
-    
   </platform>
-
-  <platform name="wp7">
-    <source-file src="src/wp7/Hello.cs"/>
-  </platform>
-
+  
 </plugin>
