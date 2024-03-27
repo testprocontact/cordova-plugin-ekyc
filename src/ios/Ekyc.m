@@ -22,9 +22,10 @@
     
     [FEKYC startFPTEKYCFlowWithConfig:config from:self.viewController completion:^(NSDictionary<NSString *,id> * _Nullable result) {
         NSString *facematch = [NSString stringWithFormat:@"%@",[result valueForKey:@"facematch"]];
-        if (![facematch isEqualToString:@"(null)"] && facematch != nil) {
+        if (![facematch isEqualToString:@"(null)"] && ![facematch isEqualToString:@"<null>"] && facematch != nil) {
+            NSMutableDictionary *dictResult = [result mutableCopy];
             [self.viewController removeFromParentViewController];
-            CDVPluginResult* resultCordova = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[result description]];
+            CDVPluginResult* resultCordova = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dictResult];
             [self.commandDelegate sendPluginResult:resultCordova callbackId:command.callbackId];
         }
     }];

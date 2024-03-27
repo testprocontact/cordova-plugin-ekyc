@@ -9,15 +9,11 @@ import com.fpt.fci.ekycfull.presentation.view.EkycActivity;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.UUID;
 
@@ -67,13 +63,24 @@ public class Ekyc extends CordovaPlugin {
             String video = intent.getStringExtra(BaseConfig.ReturnParamType.VIDEO_FILE_PATH.name());
             Gson gson = new Gson();
             JsonElement jsonElement = gson.toJsonTree(EkycResult.INSTANCE.getOcrData());
+            String liveElement = gson.toJson(EkycResult.INSTANCE.getLiveData());
             JsonObject jsonObject = jsonElement.getAsJsonObject();
             jsonObject.addProperty("front", front);
             jsonObject.addProperty("back", back);
             jsonObject.addProperty("selfie", selfie);
             jsonObject.addProperty("video", video);
+            jsonObject.addProperty("live", liveElement);
+            if (EkycResult.INSTANCE.getNfcData() != null) {
+                String nfcElement = gson.toJson(EkycResult.INSTANCE.getNfcData());
+                jsonObject.addProperty("nfc", nfcElement);
+            }
+            if (EkycResult.INSTANCE.getSessionData() != null) {
+                String nfcElement = gson.toJson(EkycResult.INSTANCE.getSessionData());
+                jsonObject.addProperty("session", nfcElement);
+            }
             this.callbackContext.success(jsonObject.toString());
         }
     }
 
 }
+
