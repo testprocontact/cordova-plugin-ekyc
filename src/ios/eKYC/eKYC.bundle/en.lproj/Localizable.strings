@@ -20,7 +20,7 @@
 "err_tag_not_valid" = "Tag not valid.";
 "err_more_than_1_tag" = "More than 1 tags was found. Please present only 1 tag.";
 "err_connection" = "Connection error. Please try again.";
-"err_mrz_not_valid" = "MRZ Key not valid for this document.";
+"err_mrz_not_valid" = "An error occurred, please rescan MRZ";
 "err_common_problem" = "Sorry, there was a problem reading the identity card. Please try again!";
 "err_specific_problem" = "Sorry, there was a problem reading the chip.";
 "err_cannot_authen" = "Sorry, cannot authenticate this tag right now. Please try again!";
