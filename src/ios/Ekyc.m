@@ -17,8 +17,8 @@
     NSInteger env = [[[command arguments] objectAtIndex:3] integerValue];
 
     NSArray *ocrTypes = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:docType], nil];
-    
-    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO themeColor:[UIColor colorWithRed:0/255 green:57/255 blue:70/255 alpha:1.0] submitResult:NO nfcHasLiveness:NO language:@"vi" countryCode:@"vi" mainStoryboard:@"" customInfo:nil];
+
+    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil];
     
     [FEKYC startFPTEKYCFlowWithConfig:config from:self.viewController completion:^(NSDictionary<NSString *,id> * _Nullable result) {
         NSString *facematch = [NSString stringWithFormat:@"%@",[result valueForKey:@"facematch"]];
