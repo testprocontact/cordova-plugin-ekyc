@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "eKYC.xcframework"
   s.resource = "eKYC.bundle"
 
-  s.dependency 'OpenSSL-Universal'
+  s.dependency 'OpenSSL-Universal', '1.1.2200'
   s.dependency 'lottie-ios', '4.3.3'
   s.dependency 'TensorFlowLiteSwift'
 end

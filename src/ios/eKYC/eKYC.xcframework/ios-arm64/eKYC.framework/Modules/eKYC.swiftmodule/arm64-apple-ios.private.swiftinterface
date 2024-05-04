@@ -579,6 +579,7 @@ extension eKYC.FCIIndicator {
 extension eKYC.FCIIndicator {
   @_Concurrency.MainActor(unsafe) public class func dismiss()
   @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil, _ height: CoreFoundation.CGFloat, _ width: CoreFoundation.CGFloat)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FCIIndicator : UIKit.UIView {
   @objc deinit

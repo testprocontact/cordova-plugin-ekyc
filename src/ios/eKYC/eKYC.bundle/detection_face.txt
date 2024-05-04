@@ -1,0 +1,7 @@
+normal
+with_glasses
+with_mask
+with_bs
+with_hand
+with_hair
+other

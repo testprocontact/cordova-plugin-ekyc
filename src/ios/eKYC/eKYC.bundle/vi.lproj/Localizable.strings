@@ -173,10 +173,10 @@
 "label_place_of_issue" = "Nơi cấp:";
 "label_passport_number" = "Số GCMND";
 "label_id_number" = "Số hộ chiếu:";
-"label_father_name" = "Tên bố:";
-"label_mother_name" = "Tên mẹ:";
-"label_partner_name" = "Tên vợ/chồng:";
-"label_verified" = "Verified";
+"label_father_name" = "Họ tên cha";
+"label_mother_name" = "Họ tên mẹ";
+"label_partner_name" = "Họ tên vợ/chồng";
+"label_verified" = "Trạng thái xác thực";
 
 
 "step_11" = "Bước 1";
@@ -236,7 +236,7 @@
 "issue_date_key" = "Ngày phát hành";
 "religion_key" = "Tôn giáo";
 "mother_name_key" = "Họ tên mẹ";
-"father_name_key" = "Họ tên bố";
+"father_name_key" = "Họ tên cha";
 "partner_name_key" = "Họ tên vợ/chồng";
 "press_key" = "Ấn";
 "descriptionManual_key" = "để chuyển chế độ quay thủ công";
@@ -263,3 +263,15 @@ vùng chụp";
 "key_takeback"="Chụp mặt sau";
 "key_takefront"="Chụp mặt trước";
 "key_id_wrong"="Giấy tờ chưa đúng";
+
+"ocr_step"="Xác thực";
+"selfie_step"="Quay video";
+"review_step"="Kiểm tra";
+
+"text_notification"="Thông báo";
+
+"fci_liveness"="Xác minh trực tiếp:";
+"fci_facematch"="Khớp khuôn mặt:";
+"fci_similarity"="Độ giống:";
+"fci_true"="Đúng";
+"fci_tryagain"="Vui lòng thực hiện lại";

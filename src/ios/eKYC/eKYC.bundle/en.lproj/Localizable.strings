@@ -172,9 +172,9 @@
 "label_place_of_issue" = "Nơi cấp:";
 "label_passport_number" = "Số GCMND";
 "label_id_number" = "Số hộ chiếu:";
-"label_father_name" = "Tên bố:";
-"label_mother_name" = "Tên mẹ:";
-"label_partner_name" = "Tên vợ/chồng:";
+"label_father_name" = "Father's name:";
+"label_mother_name" = "Mother's name:";
+"label_partner_name" = "Partner's name:";
 "label_verified" = "Verified:";
 
 
@@ -260,3 +260,15 @@
 "key_takeback"="Take a photo of the back";
 "key_takefront"="Take a photo of the front";
 "key_id_wrong"="Invalid Document";
+
+"ocr_step"="Ocr";
+"selfie_step"="Selfie";
+"review_step"="Review";
+
+"text_notification"="Notification";
+
+"fci_liveness"="Liveness:";
+"fci_facematch"="Facematch:";
+"fci_similarity"="Similarity:";
+"fci_true"="TRUE";
+"fci_tryagain"="Please try again";
