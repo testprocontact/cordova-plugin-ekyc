@@ -51,7 +51,7 @@ public class Ekyc extends CordovaPlugin {
             front = data.getString(4);
             back = data.getString(5);
         }
-        System.out.println("startSDK "+front+" back "+back);
+        
         Intent intent = new Intent(cordova.getContext(), EkycActivity.class);
         intent.putExtra(BaseConfig.ParamType.API_KEY.name(), apiKey);
         intent.putExtra(BaseConfig.ParamType.DOCUMENT_TYPE.name(), docType);
@@ -59,8 +59,8 @@ public class Ekyc extends CordovaPlugin {
         intent.putExtra(BaseConfig.ParamType.UUID.name(), uuid.isEmpty() ? UUID.randomUUID().toString() : uuid);
         intent.putExtra(BaseConfig.ParamType.ENVIRONMENT.name(), env);
         if (!TextUtils.isEmpty(front) && !TextUtils.isEmpty(back)) {
-//            intent.putExtra(BaseConfig.ParamType.FRONT_PATH.name(), front);
-//            intent.putExtra(BaseConfig.ParamType.BACK_PATH.name(), back);
+            intent.putExtra(BaseConfig.ParamType.FRONT_PATH.name(), front);
+            intent.putExtra(BaseConfig.ParamType.BACK_PATH.name(), back);
         }
         cordova.startActivityForResult(this, intent, 0);
     }
