@@ -2,6 +2,7 @@ package com.fci.plugin;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.text.TextUtils;
 
 import com.fpt.fci.ekycfull.EkycResult;
 import com.fpt.fci.ekycfull.domain.BaseConfig;
@@ -44,12 +45,23 @@ public class Ekyc extends CordovaPlugin {
         String uuid = data.getString(1);
         int docType = data.getInt(2);
         int env = data.getInt(3);
+        String front = null;
+        String back = null;
+        if (data.length() == 6) {
+            front = data.getString(4);
+            back = data.getString(5);
+        }
+        System.out.println("startSDK "+front+" back "+back);
         Intent intent = new Intent(cordova.getContext(), EkycActivity.class);
         intent.putExtra(BaseConfig.ParamType.API_KEY.name(), apiKey);
         intent.putExtra(BaseConfig.ParamType.DOCUMENT_TYPE.name(), docType);
         intent.putExtra(BaseConfig.ParamType.LANG.name(), "vi");
         intent.putExtra(BaseConfig.ParamType.UUID.name(), uuid.isEmpty() ? UUID.randomUUID().toString() : uuid);
         intent.putExtra(BaseConfig.ParamType.ENVIRONMENT.name(), env);
+        if (!TextUtils.isEmpty(front) && !TextUtils.isEmpty(back)) {
+//            intent.putExtra(BaseConfig.ParamType.FRONT_PATH.name(), front);
+//            intent.putExtra(BaseConfig.ParamType.BACK_PATH.name(), back);
+        }
         cordova.startActivityForResult(this, intent, 0);
     }
 
