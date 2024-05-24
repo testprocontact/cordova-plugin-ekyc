@@ -639,7 +639,7 @@ public struct MultipartRequest {
   public var privateKey: Swift.String
   public var clientUUID: Swift.String?
   public var urlFrontImage: Swift.String
-  public var urlBackImage: Swift.String?
+  public var urlBackImage: Swift.String
   public var fullName: Swift.String?
   public var environment: eKYC.FEKYCEnvironment?
   public var livenessType: Swift.Int?

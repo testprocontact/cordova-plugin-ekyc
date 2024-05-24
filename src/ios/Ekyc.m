@@ -16,9 +16,18 @@
     int docType = [[[command arguments] objectAtIndex:2] intValue];
     NSInteger env = [[[command arguments] objectAtIndex:3] integerValue];
 
+    NSString *urlFront = @"";
+    NSString *urlBack = @"";
+    
+    if ([command arguments].count > 4) {
+        urlFront = [[command arguments] objectAtIndex:4];
+    }
+    if ([command arguments].count > 5) {
+        urlBack = [[command arguments] objectAtIndex:5];
+    }
+    
     NSArray *ocrTypes = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:docType], nil];
-
-    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil];
+    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" urlFrontImage:urlFront urlBackImage:urlBack isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil];
     
     [FEKYC startFPTEKYCFlowWithConfig:config from:self.viewController completion:^(NSDictionary<NSString *,id> * _Nullable result) {
         NSString *facematch = [NSString stringWithFormat:@"%@",[result valueForKey:@"facematch"]];
