@@ -638,6 +638,8 @@ public struct MultipartRequest {
   public var apiKey: Swift.String
   public var privateKey: Swift.String
   public var clientUUID: Swift.String?
+  public var urlFrontImage: Swift.String
+  public var urlBackImage: Swift.String?
   public var fullName: Swift.String?
   public var environment: eKYC.FEKYCEnvironment?
   public var livenessType: Swift.Int?
@@ -659,6 +661,7 @@ public struct MultipartRequest {
   public var sessionId: Swift.String?
   public var livenessWithoutBE: Swift.Bool?
   @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:])
+  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", urlFrontImage: Swift.String = "", urlBackImage: Swift.String = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:])
   @objc public init(apiKey: Swift.String, flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:])
   public init(apiKey: Swift.String, clientUUID: Swift.String = UUID().uuidString, ocrTypes: eKYC.FEKYCOcrType = .nfc, isShowResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [])
   @objc deinit
@@ -710,6 +713,15 @@ public struct FEKYCColor {
 @objc public enum FEKYCLivenessType : Swift.Int {
   case v3
   case v4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FEKYCOcr : Swift.Int {
+  case normal
+  case url
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1280,6 +1292,9 @@ extension eKYC.FEKYCCustomer : Swift.RawRepresentable {}
 extension eKYC.FEKYCLivenessType : Swift.Equatable {}
 extension eKYC.FEKYCLivenessType : Swift.Hashable {}
 extension eKYC.FEKYCLivenessType : Swift.RawRepresentable {}
+extension eKYC.FEKYCOcr : Swift.Equatable {}
+extension eKYC.FEKYCOcr : Swift.Hashable {}
+extension eKYC.FEKYCOcr : Swift.RawRepresentable {}
 extension eKYC.LogLevel : Swift.Equatable {}
 extension eKYC.LogLevel : Swift.Hashable {}
 extension eKYC.LogLevel : Swift.RawRepresentable {}
