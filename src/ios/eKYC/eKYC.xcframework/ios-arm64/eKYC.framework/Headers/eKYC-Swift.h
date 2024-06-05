@@ -323,11 +323,23 @@ SWIFT_CLASS("_TtC4eKYC5FEKYC")
 @end
 
 
+typedef SWIFT_ENUM(NSInteger, FEKYCBankFlow, open) {
+  FEKYCBankFlowInfo = 0,
+  FEKYCBankFlowTranfer = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, FEKYCBankStatusCapture, open) {
+  FEKYCBankStatusCaptureFront = 0,
+  FEKYCBankStatusCaptureLeft = 1,
+  FEKYCBankStatusCaptureRight = 2,
+};
+
 @class NSArray;
 enum FEKYCEnvironment : NSInteger;
 
 SWIFT_CLASS("_TtC4eKYC11FEKYCConfig")
 @interface FEKYCConfig : NSObject
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey jwt:(NSString * _Nullable)jwt cardId:(NSString * _Nullable)cardId flowBank:(enum FEKYCBankFlow)flowBank clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow urlFrontImage:(NSString * _Nonnull)urlFrontImage urlBackImage:(NSString * _Nonnull)urlBackImage isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey flow:(NSString * _Nullable)flow sessionId:(NSString * _Nullable)sessionId isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType livenessWithoutBE:(BOOL)livenessWithoutBE onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
@@ -341,6 +353,7 @@ typedef SWIFT_ENUM(NSInteger, FEKYCCustomer, open) {
   FEKYCCustomerSendo = 2,
   FEKYCCustomerVuiapp = 3,
   FEKYCCustomerSunlife = 4,
+  FEKYCCustomerPgbank = 5,
 };
 
 typedef SWIFT_ENUM(NSInteger, FEKYCEnvironment, open) {

@@ -72,6 +72,8 @@
 "liveness_guide_6" = "Move Further";
 "liveness_guide_7" = "Hold Steady";
 "liveness_guide_8" = "Face center";
+"liveness_guide_9" = "Turn left";
+"liveness_guide_10" = "Turn right";
 
 "let_s_try_again" = "Let's try that again";
 "we_need_to_clearer_video_selfie" = "We Need Clearer Video Selfie";
@@ -272,3 +274,5 @@
 "fci_similarity"="Similarity:";
 "fci_true"="TRUE";
 "fci_tryagain"="Please try again";
+
+"expire_date_key" = "Expired Date";

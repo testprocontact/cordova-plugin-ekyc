@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/eKYC-Swift.h</key>
 		<data>
-		fQO0iSddw8GoXS0BSaPSscHxluI=
+		KALbQgAbjJq094VgJkWp0u+tTlw=
 		</data>
 		<key>Headers/eKYC-umbrella.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2+0tpC1WE6U7KhRi+k3f2VYyYM8=
+		fgjoDFtvnyGfrTTd07IYA+9YccE=
 		</data>
 		<key>Modules/eKYC.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		dW6+8JpfwhXclAOVzFH9IIv9I8c=
+		Uftt1P8AmiwDt27BoFT/Bq0tVCM=
 		</data>
 		<key>Modules/eKYC.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ns5Q9w/Kw0JpFuckCV8RJd4QXWE=
+		G7o04gMlrHaklUNRYicMPVDMlvo=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+x43FysyTVj01h/IBAIrIdva9Cg=
+		1utN4BNY8EXRcSTRA/Rhx2tkV1o=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8F40ZUKuBG8hBmv7QctFkd+S8XE=
+		zrmzUGLPQd/G2OmXd+ioY6Urlmc=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8F40ZUKuBG8hBmv7QctFkd+S8XE=
+		zrmzUGLPQd/G2OmXd+ioY6Urlmc=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		23fxmlZiOf3O31aRGhrALFy6A5k=
+		GJ3lNkvF1D4ONJXAjJYkUOiIKKc=
 		</data>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+x43FysyTVj01h/IBAIrIdva9Cg=
+		1utN4BNY8EXRcSTRA/Rhx2tkV1o=
 		</data>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1r5p3m/NYhBed8RgvM5BrO55oac=
+		wu8Vo6SYPA6sr3iOkG/ck3z4zC8=
 		</data>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1r5p3m/NYhBed8RgvM5BrO55oac=
+		wu8Vo6SYPA6sr3iOkG/ck3z4zC8=
 		</data>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VQu2ngVAnCyXyTJqoy8bNhLOcTg=
+		NxMkT7RctW528PwwEu1295OYVko=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fQO0iSddw8GoXS0BSaPSscHxluI=
+			KALbQgAbjJq094VgJkWp0u+tTlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			SaUulu70/AKH1erdxB4Rprzfjv0htfRJcWmM4dOTdtc=
+			CnHOMbH+INb6WWmSscCm5/tk9gYMNlKhma6DhV70XdI=
 			</data>
 		</dict>
 		<key>Headers/eKYC-umbrella.h</key>
@@ -97,44 +97,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dW6+8JpfwhXclAOVzFH9IIv9I8c=
+			Uftt1P8AmiwDt27BoFT/Bq0tVCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lx36u7CxvXug/9QD/212Rf3mBZByCKSFaBRINY6Rzz0=
+			YI6r9BR/JxhXz654/X3omVz39NYvzIgSLqxaKSpc2L8=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ns5Q9w/Kw0JpFuckCV8RJd4QXWE=
+			G7o04gMlrHaklUNRYicMPVDMlvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			leNDc5ZGT7oOI7fpHCYVRQlYH2EPUVrstWQsukGlg4Q=
+			eGRXsT0NpxD6JNoeBjs3Mefd7rc6kYIbrtEAlA/t7Tk=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+x43FysyTVj01h/IBAIrIdva9Cg=
+			1utN4BNY8EXRcSTRA/Rhx2tkV1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			iAfEEZD3HIY89xWZp0lZBUAu07FFpE4Mz/v3IOasRjM=
+			178q+ZNHFGNO5wyjIT3KGu3++Gp3ybZwPszbMdXJAaY=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8F40ZUKuBG8hBmv7QctFkd+S8XE=
+			zrmzUGLPQd/G2OmXd+ioY6Urlmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			m0KOmbO6lpoU5VnPqOPi+iLXJ+n9KMuIvCoFZBkKga0=
+			APpokDqHzFPYKfwUHC5fwrdfg/3Wjf4956nszPuUOfw=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -152,44 +152,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8F40ZUKuBG8hBmv7QctFkd+S8XE=
+			zrmzUGLPQd/G2OmXd+ioY6Urlmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			m0KOmbO6lpoU5VnPqOPi+iLXJ+n9KMuIvCoFZBkKga0=
+			APpokDqHzFPYKfwUHC5fwrdfg/3Wjf4956nszPuUOfw=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			23fxmlZiOf3O31aRGhrALFy6A5k=
+			GJ3lNkvF1D4ONJXAjJYkUOiIKKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			QvIunaJILoCQddDEGH+hRSx76X7EonqoW+Wgr08/uSI=
+			w8MFU+SFdMGfk15Y8+W/hX/pPAWTM7xXCGDDtpY03kA=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+x43FysyTVj01h/IBAIrIdva9Cg=
+			1utN4BNY8EXRcSTRA/Rhx2tkV1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			iAfEEZD3HIY89xWZp0lZBUAu07FFpE4Mz/v3IOasRjM=
+			178q+ZNHFGNO5wyjIT3KGu3++Gp3ybZwPszbMdXJAaY=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1r5p3m/NYhBed8RgvM5BrO55oac=
+			wu8Vo6SYPA6sr3iOkG/ck3z4zC8=
 			</data>
 			<key>hash2</key>
 			<data>
-			eoixHrGHZUKkx0DuZnkMOyUr5tAf1Pxd1NaoHZB6i1Y=
+			fh7vUTFGFYkEqCzryw6tZ2P2YxN3/tqZpYMIniBe0SY=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -207,22 +207,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1r5p3m/NYhBed8RgvM5BrO55oac=
+			wu8Vo6SYPA6sr3iOkG/ck3z4zC8=
 			</data>
 			<key>hash2</key>
 			<data>
-			eoixHrGHZUKkx0DuZnkMOyUr5tAf1Pxd1NaoHZB6i1Y=
+			fh7vUTFGFYkEqCzryw6tZ2P2YxN3/tqZpYMIniBe0SY=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VQu2ngVAnCyXyTJqoy8bNhLOcTg=
+			NxMkT7RctW528PwwEu1295OYVko=
 			</data>
 			<key>hash2</key>
 			<data>
-			E2QlAp60PcQN88ohnIwnfA0ScjQ4apVlydcNaQO/DL8=
+			QBhTyThLE1bSvnJGdJdW7iHA1NhocBdU4EBYVDIp63U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

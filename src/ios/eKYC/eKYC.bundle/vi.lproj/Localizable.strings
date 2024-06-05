@@ -71,7 +71,8 @@
 "liveness_guide_6" = "Xa chút nữa";
 "liveness_guide_7" = "Giữ nguyên nhé";
 "liveness_guide_8" = "Không nghiêng đầu";
-
+"liveness_guide_9" = "Quay bên trái";
+"liveness_guide_10" = "Quay bên phải";
 
 "let_s_try_again" = "Hãy Thử Lại";
 "we_need_to_clearer_video_selfie" = "Chúng tôi cần video rõ hơn";
@@ -234,6 +235,7 @@
 "nationality_key" = "Quốc tịch";
 "features_key" = "Đặc điểm nhận dạng";
 "issue_date_key" = "Ngày phát hành";
+"expire_date_key" = "Ngày hết hạn";
 "religion_key" = "Tôn giáo";
 "mother_name_key" = "Họ tên mẹ";
 "father_name_key" = "Họ tên cha";
