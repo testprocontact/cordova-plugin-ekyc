@@ -58,7 +58,7 @@ public class Ekyc extends CordovaPlugin {
         intent.putExtra(BaseConfig.ParamType.LANG.name(), "vi");
         intent.putExtra(BaseConfig.ParamType.UUID.name(), uuid.isEmpty() ? UUID.randomUUID().toString() : uuid);
         intent.putExtra(BaseConfig.ParamType.ENVIRONMENT.name(), env);
-        if (!TextUtils.isEmpty(front) {
+        if (!TextUtils.isEmpty(front)) {
             intent.putExtra(BaseConfig.ParamType.FRONT_PATH.name(), front);
             intent.putExtra(BaseConfig.ParamType.BACK_PATH.name(), back);
         }
