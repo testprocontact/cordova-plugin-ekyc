@@ -276,3 +276,23 @@
 "fci_tryagain"="Please try again";
 
 "expire_date_key" = "Expired Date";
+
+
+"fci_guide_titleocr"="Instructions for taking identification documents";
+"fci_guide_des1ocr"="Please use original, intact and valid documents";
+"fci_guide_des2ocr"="Shoot in a well-lit environment, do not shoot too blurry, out of angle or blown out";
+
+"fci_guide_require1ocr"="No flare";
+"fci_guide_require2ocr"="Do not take photos out of angle";
+"fci_guide_require3ocr"="No obscured capture";
+
+"fci_guide_titlelive"="Face Authentication Guide";
+"fci_guide_des1live"="Please keep the face clearly inside the frame";
+"fci_guide_des1live"="Wear appropriate clothing, no glasses, hats or masks";
+
+"fci_guide_require1live"="Do not close your eyes";
+"fci_guide_require1live"="No glasses";
+"fci_guide_require1live"="No hat";
+
+"fci_guide_done1"="Understood";
+"fci_guide_done1"="Understood";

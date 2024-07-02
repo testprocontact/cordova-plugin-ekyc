@@ -277,3 +277,24 @@ vùng chụp";
 "fci_similarity"="Độ giống:";
 "fci_true"="Đúng";
 "fci_tryagain"="Vui lòng thực hiện lại";
+
+
+"fci_guide_titleocr"="Hướng dẫn chụp giấy tờ tùy thân";
+"fci_guide_des1ocr"="Vui lòng sử dụng giấy tờ gốc, nguyên vẹn và còn hiệu lực";
+"fci_guide_des2ocr"="Chụp trong môi trường đủ ánh sáng, không chụp quá mờ, mất góc hoặc lóa sáng";
+
+"fci_guide_require1ocr"="Không chụp lóa sáng";
+"fci_guide_require2ocr"="Không chụp mất góc";
+"fci_guide_require3ocr"="Không chụp bị che khuất";
+
+
+"fci_guide_titlelive"="Hướng dẫn xác thực khuôn mặt";
+"fci_guide_des1live"="Vui lòng chụp giữ khuôn mặt rõ nét bên trong khung hình";
+"fci_guide_des1live"="Mặc trang phục phù hợp, không đeo kính, mũ hoặc đeo khẩu trang";
+
+"fci_guide_require1live"="Không nhắm mắt";
+"fci_guide_require1live"="Không đeo kính";
+"fci_guide_require1live"="Không đội mũ";
+
+"fci_guide_done1"="Đã hiểu";
+"fci_guide_done1"="Đã hiểu";
