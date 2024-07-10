@@ -290,11 +290,11 @@ vùng chụp";
 
 "fci_guide_titlelive"="Hướng dẫn xác thực khuôn mặt";
 "fci_guide_des1live"="Vui lòng chụp giữ khuôn mặt rõ nét bên trong khung hình";
-"fci_guide_des1live"="Mặc trang phục phù hợp, không đeo kính, mũ hoặc đeo khẩu trang";
+"fci_guide_des2live"="Mặc trang phục phù hợp, không đeo kính, mũ hoặc đeo khẩu trang";
 
 "fci_guide_require1live"="Không nhắm mắt";
-"fci_guide_require1live"="Không đeo kính";
-"fci_guide_require1live"="Không đội mũ";
+"fci_guide_require2live"="Không đeo kính";
+"fci_guide_require3live"="Không đội mũ";
 
 "fci_guide_done1"="Đã hiểu";
 "fci_guide_done1"="Đã hiểu";
