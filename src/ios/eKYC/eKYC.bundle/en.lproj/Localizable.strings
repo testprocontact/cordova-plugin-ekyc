@@ -246,6 +246,8 @@
 "ocr_tiny_key" = "Small";
 "ocr_blur_key" = "Not Clear";
 "ocr_description_guide_key" = "Please take document photo to verify your information";
+"ocr_description2_guide_key" = "Please use original, intact and expired documents";
+"ocr_description3_guide_key" = "Shoot in a well-lit environment, don't take photos that are too blurry or out of focus";
 "ocr_title_wrong_key" = "Photo not invalid";
 "ocr_takepicture_key" = "Take Photo";
 "ocr_title_guide_key" = "Personal documents";
