@@ -254,6 +254,7 @@
 "photo_description_guide_key" = "Please keep your face in the recording area";
 "kyc_take_a_selfie"="Take a Selfie";
 "kyc_guide_face_des"="The image should be clear and have your face fully inside the frame";
+"kyc_guide_face_des2"="Wear appropriate clothing, do not wear glasses, hats or masks";
 "kyc_take_a_selfie_title"="Face Verification";
 "kyc_doc_verification_title"="Document Verification";
 
