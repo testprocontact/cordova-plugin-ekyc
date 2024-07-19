@@ -355,6 +355,7 @@ typedef SWIFT_ENUM(NSInteger, FEKYCCustomer, open) {
   FEKYCCustomerSunlife = 4,
   FEKYCCustomerPgbank = 5,
   FEKYCCustomerPaytech = 6,
+  FEKYCCustomerSsi = 7,
 };
 
 typedef SWIFT_ENUM(NSInteger, FEKYCEnvironment, open) {
@@ -800,6 +801,7 @@ typedef SWIFT_ENUM(NSInteger, FEKYCCustomer, open) {
   FEKYCCustomerSunlife = 4,
   FEKYCCustomerPgbank = 5,
   FEKYCCustomerPaytech = 6,
+  FEKYCCustomerSsi = 7,
 };
 
 typedef SWIFT_ENUM(NSInteger, FEKYCEnvironment, open) {

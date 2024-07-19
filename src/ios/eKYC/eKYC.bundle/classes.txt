@@ -6,3 +6,5 @@ cmnd_old_front
 cmnd_old_back
 cut_corner
 passport
+cc2024_front
+cc2024_back

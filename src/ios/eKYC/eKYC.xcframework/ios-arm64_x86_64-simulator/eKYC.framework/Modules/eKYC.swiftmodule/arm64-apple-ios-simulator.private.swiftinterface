@@ -717,6 +717,7 @@ public struct FEKYCColor {
   case sunlife
   case pgbank
   case paytech
+  case ssi
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
