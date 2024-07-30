@@ -751,6 +751,9 @@ public struct FEKYCColor {
     get
   }
 }
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
 public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case verbose
   case debug
@@ -1164,9 +1167,6 @@ public struct ResponseAPDU {
   public var sw1: Swift.UInt8
   public var sw2: Swift.UInt8
   public init(data: [Swift.UInt8], sw1: Swift.UInt8, sw2: Swift.UInt8)
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
 public enum SecureMessagingSupportedAlgorithms {
   case DES

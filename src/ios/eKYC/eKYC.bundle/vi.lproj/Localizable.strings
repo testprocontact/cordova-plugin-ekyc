@@ -301,4 +301,7 @@ vùng chụp";
 "fci_guide_require3live"="Không đội mũ";
 
 "fci_guide_done1"="Đã hiểu";
-"fci_guide_done1"="Đã hiểu";
+
+"ssi_guide_title"="Hướng dẫn đọc thẻ Căn Cước Công Dân bằng công nghệ không chạm (NFC)";
+"ssi_guide_des1"="Bước 1: Chạm mặt sau của điện thoại vào phần Chip tại mặt sau thẻ CCCD (vùng màu vàng trên hình ảnh minh hoạ)";
+"ssi_guide_des2"="Bước 2: Giữ nguyên CCCD và điện thoại khi màn hình thông báo đang đọc thông tin.";

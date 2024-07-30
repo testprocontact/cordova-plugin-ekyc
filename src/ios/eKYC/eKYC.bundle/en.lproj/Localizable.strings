@@ -298,4 +298,6 @@
 "fci_guide_require1live"="No hat";
 
 "fci_guide_done1"="Understood";
-"fci_guide_done1"="Understood";
+"ssi_guide_title"="Instructions for reading Citizen Identification cards using non-touch technology (NFC)";
+"ssi_guide_des1"="Step 1: Touch the back of the phone to the Chip section on the back of the CCCD card (yellow area on the illustration)";
+"ssi_guide_des2"="Step 2: Keep the CCCD and phone still while the notification screen is reading the information.";
