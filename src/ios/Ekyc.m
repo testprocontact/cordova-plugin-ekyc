@@ -27,7 +27,8 @@
     }
     
     NSArray *ocrTypes = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:docType], nil];
-    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" urlFrontImage:urlFront urlBackImage:urlBack isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil];
+    
+    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" urlFrontImage:urlFront urlBackImage:urlBack isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil setBaseUrl:@"" themes:FEKYCThemesLight headers:nil];
     
     [FEKYC startFPTEKYCFlowWithConfig:config from:self.viewController completion:^(NSDictionary<NSString *,id> * _Nullable result) {
         NSString *facematch = [NSString stringWithFormat:@"%@",[result valueForKey:@"facematch"]];
