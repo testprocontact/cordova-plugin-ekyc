@@ -336,13 +336,14 @@ typedef SWIFT_ENUM(NSInteger, FEKYCBankStatusCapture, open) {
 
 @class NSArray;
 enum FEKYCEnvironment : NSInteger;
+enum FEKYCThemes : NSInteger;
 
 SWIFT_CLASS("_TtC4eKYC11FEKYCConfig")
 @interface FEKYCConfig : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey jwt:(NSString * _Nullable)jwt cardId:(NSString * _Nullable)cardId flowBank:(enum FEKYCBankFlow)flowBank clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow urlFrontImage:(NSString * _Nonnull)urlFrontImage urlBackImage:(NSString * _Nonnull)urlBackImage isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey flow:(NSString * _Nullable)flow sessionId:(NSString * _Nullable)sessionId isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType livenessWithoutBE:(BOOL)livenessWithoutBE onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey jwt:(NSString * _Nullable)jwt cardId:(NSString * _Nullable)cardId flowBank:(enum FEKYCBankFlow)flowBank clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode themes:(enum FEKYCThemes)themes setBaseUrl:(NSString * _Nullable)setBaseUrl headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo setBaseUrl:(NSString * _Nullable)setBaseUrl headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow urlFrontImage:(NSString * _Nonnull)urlFrontImage urlBackImage:(NSString * _Nonnull)urlBackImage isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo setBaseUrl:(NSString * _Nullable)setBaseUrl themes:(enum FEKYCThemes)themes headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey flow:(NSString * _Nullable)flow sessionId:(NSString * _Nullable)sessionId isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType livenessWithoutBE:(BOOL)livenessWithoutBE onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo setBaseUrl:(NSString * _Nullable)setBaseUrl themes:(enum FEKYCThemes)themes headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -356,6 +357,8 @@ typedef SWIFT_ENUM(NSInteger, FEKYCCustomer, open) {
   FEKYCCustomerPgbank = 5,
   FEKYCCustomerPaytech = 6,
   FEKYCCustomerSsi = 7,
+  FEKYCCustomerAcbs = 8,
+  FEKYCCustomerVetc = 9,
 };
 
 typedef SWIFT_ENUM(NSInteger, FEKYCEnvironment, open) {
@@ -381,6 +384,11 @@ typedef SWIFT_ENUM(NSInteger, FEKYCOcrType, open) {
   FEKYCOcrTypeNfc = 3,
 };
 
+typedef SWIFT_ENUM(NSInteger, FEKYCThemes, open) {
+  FEKYCThemesDark = 0,
+  FEKYCThemesLight = 1,
+};
+
 typedef SWIFT_ENUM(NSInteger, FEKYCVerifyType, open) {
   FEKYCVerifyTypePhoto = 0,
   FEKYCVerifyTypeLiveness = 1,
@@ -397,6 +405,16 @@ SWIFT_CLASS("_TtC4eKYC14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)
 
 
 
+SWIFT_CLASS("_TtC4eKYC12SSIInficator")
+@interface SSIInficator : UIView
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
 SWIFT_CLASS("_TtC4eKYC16SunlifeIndicator")
 @interface SunlifeIndicator : UIView
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -404,6 +422,7 @@ SWIFT_CLASS("_TtC4eKYC16SunlifeIndicator")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 
@@ -782,13 +801,14 @@ typedef SWIFT_ENUM(NSInteger, FEKYCBankStatusCapture, open) {
 
 @class NSArray;
 enum FEKYCEnvironment : NSInteger;
+enum FEKYCThemes : NSInteger;
 
 SWIFT_CLASS("_TtC4eKYC11FEKYCConfig")
 @interface FEKYCConfig : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey jwt:(NSString * _Nullable)jwt cardId:(NSString * _Nullable)cardId flowBank:(enum FEKYCBankFlow)flowBank clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow urlFrontImage:(NSString * _Nonnull)urlFrontImage urlBackImage:(NSString * _Nonnull)urlBackImage isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey flow:(NSString * _Nullable)flow sessionId:(NSString * _Nullable)sessionId isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType livenessWithoutBE:(BOOL)livenessWithoutBE onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey jwt:(NSString * _Nullable)jwt cardId:(NSString * _Nullable)cardId flowBank:(enum FEKYCBankFlow)flowBank clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode themes:(enum FEKYCThemes)themes setBaseUrl:(NSString * _Nullable)setBaseUrl headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo setBaseUrl:(NSString * _Nullable)setBaseUrl headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey sessionId:(NSString * _Nullable)sessionId flow:(NSString * _Nullable)flow urlFrontImage:(NSString * _Nonnull)urlFrontImage urlBackImage:(NSString * _Nonnull)urlBackImage isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo setBaseUrl:(NSString * _Nullable)setBaseUrl themes:(enum FEKYCThemes)themes headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey flow:(NSString * _Nullable)flow sessionId:(NSString * _Nullable)sessionId isFullFlow:(BOOL)isFullFlow clientUUID:(NSString * _Nonnull)clientUUID ocrTypes:(NSArray * _Nonnull)ocrTypes environment:(enum FEKYCEnvironment)environment livenessType:(NSInteger)livenessType livenessWithoutBE:(BOOL)livenessWithoutBE onlyDoccument:(BOOL)onlyDoccument breakFlow:(BOOL)breakFlow isShowResult:(BOOL)isShowResult submitResult:(BOOL)submitResult language:(NSString * _Nonnull)language countryCode:(NSString * _Nonnull)countryCode customInfo:(NSDictionary<NSString *, id> * _Nullable)customInfo setBaseUrl:(NSString * _Nullable)setBaseUrl themes:(enum FEKYCThemes)themes headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -802,6 +822,8 @@ typedef SWIFT_ENUM(NSInteger, FEKYCCustomer, open) {
   FEKYCCustomerPgbank = 5,
   FEKYCCustomerPaytech = 6,
   FEKYCCustomerSsi = 7,
+  FEKYCCustomerAcbs = 8,
+  FEKYCCustomerVetc = 9,
 };
 
 typedef SWIFT_ENUM(NSInteger, FEKYCEnvironment, open) {
@@ -827,6 +849,11 @@ typedef SWIFT_ENUM(NSInteger, FEKYCOcrType, open) {
   FEKYCOcrTypeNfc = 3,
 };
 
+typedef SWIFT_ENUM(NSInteger, FEKYCThemes, open) {
+  FEKYCThemesDark = 0,
+  FEKYCThemesLight = 1,
+};
+
 typedef SWIFT_ENUM(NSInteger, FEKYCVerifyType, open) {
   FEKYCVerifyTypePhoto = 0,
   FEKYCVerifyTypeLiveness = 1,
@@ -843,6 +870,16 @@ SWIFT_CLASS("_TtC4eKYC14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)
 
 
 
+SWIFT_CLASS("_TtC4eKYC12SSIInficator")
+@interface SSIInficator : UIView
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
 SWIFT_CLASS("_TtC4eKYC16SunlifeIndicator")
 @interface SunlifeIndicator : UIView
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -850,6 +887,7 @@ SWIFT_CLASS("_TtC4eKYC16SunlifeIndicator")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 

@@ -53,6 +53,8 @@
 "text_license_front" = "Giấy phép lái xe (Mặt trước)";
 "text_front" = "Mặt trước";
 "text_back" = "Mặt sau";
+"text_front1" = "mặt trước";
+"text_back1" = "mặt sau";
 "text_selca" = "Chân dung";
 "text_profile" = "C06";
 
@@ -302,6 +304,30 @@ vùng chụp";
 
 "fci_guide_done1"="Đã hiểu";
 
-"ssi_guide_title"="Hướng dẫn đọc thẻ Căn Cước Công Dân bằng công nghệ không chạm (NFC)";
-"ssi_guide_des1"="Bước 1: Chạm mặt sau của điện thoại vào phần Chip tại mặt sau thẻ CCCD (vùng màu vàng trên hình ảnh minh hoạ)";
-"ssi_guide_des2"="Bước 2: Giữ nguyên CCCD và điện thoại khi màn hình thông báo đang đọc thông tin.";
+"ssi_guide_title"="Hướng dẫn đọc thẻ Căn cước/Căn Cước Công Dân bằng công nghệ NFC";
+"ssi_guide_des1"="Bước 1: Nhấn nút “Quét thẻ chip (NFC)” bên dưới.";
+"ssi_guide_des2"="Bước 2: Chạm phần chip đồng trên CC/CCCD vào vị trí đọc NFC phía sau điện thoại như đã đánh dấu trong hình minh họa";
+"ssi_guide_des3"="Bước 3: Giữ nguyên CC/CCCD và điện thoại khi màn hình thông báo đang đọc thông tin";
+"ssi_guide_note"="Lưu ý: Nếu nút “Chụp chuỗi ký tự sau thẻ CCCD“ chưa có tick xanh, vui lòng nhấn nút này để và thực hiện theo hướng dẫn trước khi nhấn nút đọc thẻ NFC.";
+
+"guide_des_nfc1" = "Chạm phần chip đồng trên CCCD vào vị trí đọc NFC phía sau điện thoại";
+"guide_des_nfc2" = "Giữ nguyên CCCD và điện thoại khi màn hình thông báo đag đọc thông tin";
+
+"wrong_qrcode" = "Kết quả OCR không khớp. Bạn vui lòng quét lại qrcode hoặc chụp ảnh lại giấy tờ";
+
+"ssiStep1"="Ảnh CCCD";
+"ssiStep2"="Đọc chip NFC";
+"ssiStep3"="Quay video";
+
+"ssiStepScanMrz"="Chụp chuỗi ký tự sau thẻ CCCD";
+"ssiStepScanNfc"="Quét thẻ chip (NFC)";
+
+"key_left"="Trái";
+"key_right"="Phải";
+"key_straight"="Thẳng";
+"ssi_key_mrz1" = "Quý khách vui lòng chụp lại thông tin mặt sau CC/CCCD gắn chip.";
+"ssi_key_mrz2" = "Lưu ý: Tập trung vào khu vực như ảnh minh họa.";
+
+"key_nfc_error"= "Quét NFC thất bại, bạn có thể bỏ qua để thực hiện sau";
+
+"key_none_paper"="Loại giấy tờ không được hỗ trợ";

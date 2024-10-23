@@ -410,6 +410,12 @@ public class DocumentModel {
   public var verificationErrors: [Swift.Error] {
     get
   }
+  public var challenge: Swift.String {
+    get
+  }
+  public var aAResult: Swift.String {
+    get
+  }
   public var isPACESupported: Swift.Bool {
     get
   }
@@ -642,7 +648,9 @@ public struct MultipartRequest {
   public var urlBackImage: Swift.String
   public var fullName: Swift.String?
   public var environment: eKYC.FEKYCEnvironment?
+  public var themes: eKYC.FEKYCThemes?
   public var livenessType: Swift.Int?
+  public var errorNfc: Swift.Int?
   public var ocrTypes: [eKYC.FEKYCOcrType]
   public var isShowResult: Swift.Bool?
   public var themeColor: UIKit.UIColor
@@ -658,13 +666,14 @@ public struct MultipartRequest {
   public var mainStoryboard: Swift.String?
   public var documentData: [[Swift.String : Any]]?
   public var customInfo: [Swift.String : Any]?
+  public var apiInfo: Swift.String?
   public var sessionId: Swift.String?
   public var livenessWithoutBE: Swift.Bool?
-  @objc public init(apiKey: Swift.String, jwt: Swift.String? = "", cardId: Swift.String? = "", flowBank: eKYC.FEKYCBankFlow = .info, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, language: Swift.String = "", countryCode: Swift.String = "vn")
-  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:])
-  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", urlFrontImage: Swift.String = "", urlBackImage: Swift.String = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:])
-  @objc public init(apiKey: Swift.String, flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:])
-  public init(apiKey: Swift.String, clientUUID: Swift.String = UUID().uuidString, ocrTypes: eKYC.FEKYCOcrType = .nfc, isShowResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [])
+  @objc public init(apiKey: Swift.String, jwt: Swift.String? = "", cardId: Swift.String? = "", flowBank: eKYC.FEKYCBankFlow = .info, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, language: Swift.String = "", countryCode: Swift.String = "vn", themes: eKYC.FEKYCThemes = .light, setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:])
+  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:])
+  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", urlFrontImage: Swift.String = "", urlBackImage: Swift.String = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", themes: eKYC.FEKYCThemes = .light, headers: [Swift.String : Swift.String]? = [:])
+  @objc public init(apiKey: Swift.String, flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", themes: eKYC.FEKYCThemes = .light, headers: [Swift.String : Swift.String]? = [:])
+  public init(apiKey: Swift.String, clientUUID: Swift.String = UUID().uuidString, ocrTypes: eKYC.FEKYCOcrType = .nfc, isShowResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [], themes: eKYC.FEKYCThemes = .light, setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:])
   @objc deinit
 }
 public struct FEKYCColor {
@@ -718,6 +727,8 @@ public struct FEKYCColor {
   case pgbank
   case paytech
   case ssi
+  case acbs
+  case vetc
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -727,6 +738,15 @@ public struct FEKYCColor {
 @objc public enum FEKYCBankFlow : Swift.Int {
   case info
   case tranfer
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FEKYCThemes : Swift.Int {
+  case dark
+  case light
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -753,6 +773,14 @@ public struct FEKYCColor {
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+extension eKYC.SSIInficator {
+  @_Concurrency.MainActor(unsafe) public class func dismiss()
+  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil, _ height: CoreFoundation.CGFloat, _ width: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SSIInficator : UIKit.UIView {
+  @objc deinit
 }
 public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case verbose
@@ -1318,6 +1346,9 @@ extension eKYC.FEKYCCustomer : Swift.RawRepresentable {}
 extension eKYC.FEKYCBankFlow : Swift.Equatable {}
 extension eKYC.FEKYCBankFlow : Swift.Hashable {}
 extension eKYC.FEKYCBankFlow : Swift.RawRepresentable {}
+extension eKYC.FEKYCThemes : Swift.Equatable {}
+extension eKYC.FEKYCThemes : Swift.Hashable {}
+extension eKYC.FEKYCThemes : Swift.RawRepresentable {}
 extension eKYC.FEKYCLivenessType : Swift.Equatable {}
 extension eKYC.FEKYCLivenessType : Swift.Hashable {}
 extension eKYC.FEKYCLivenessType : Swift.RawRepresentable {}

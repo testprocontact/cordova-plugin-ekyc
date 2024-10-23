@@ -5,3 +5,4 @@ with_bs
 with_hand
 with_hair
 other
+with_hat

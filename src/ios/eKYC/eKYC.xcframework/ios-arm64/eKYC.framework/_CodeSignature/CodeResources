@@ -4,9 +4,133 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>FEKYC_VETC.storyboardc/0Ka-gZ-90x-view-RSJ-nx-QtS.nib</key>
+		<data>
+		93YkblGDgl2xZR1aUlVn0dCnpLk=
+		</data>
+		<key>FEKYC_VETC.storyboardc/3eV-9f-Weg-view-zrw-ei-PHR.nib</key>
+		<data>
+		hZVjc6lk5CcMhCRkPjGqdcr9nfQ=
+		</data>
+		<key>FEKYC_VETC.storyboardc/4CS-nZ-gZh-view-ffE-eL-xCp.nib</key>
+		<data>
+		wTE2r8s/FscbsYN0tROGomI6Qyo=
+		</data>
+		<key>FEKYC_VETC.storyboardc/C2r-T0-4YP-view-Ytf-gw-vVv.nib</key>
+		<data>
+		JxLSDMXaqC5eKbxYQvqQoxY59eU=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCBankPhotoViewController.nib</key>
+		<data>
+		EnMZhTrY69GRtMGmc7Gne9BC/Ec=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCDocumentRecognizeViewController.nib</key>
+		<data>
+		BII8m98qyqbulzudo5E9DT4cnZk=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCFailResultViewController.nib</key>
+		<data>
+		yDTCGuOTbOrSfmoq45HQ8Aqdv5w=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCGuideLivenessViewController.nib</key>
+		<data>
+		tOTrnQlVXLacJa8YLQqUJ4TYwps=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCLivenessMLKitViewController.nib</key>
+		<data>
+		E5jdW6e38UHZLV6AWYH17b5O8H0=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCLivenessViewController.nib</key>
+		<data>
+		CvRXTJy7MLymBoUVL7KGsNuVo7U=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCPhotoViewController.nib</key>
+		<data>
+		M7DnN2HvvcpDybkJUjZHhExJHI0=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCReadNFCViewController.nib</key>
+		<data>
+		WhLWV3Ra93O8Z0lispJecRkKRQ0=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCResultTableViewController.nib</key>
+		<data>
+		VJG75fN3o0S/EjZ1VeOpNxXk1HA=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCSuccessPopupVC.nib</key>
+		<data>
+		3NX20Us+ntI3LxzOVc4/C7srt4w=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCTakeSelfieViewController.nib</key>
+		<data>
+		TXw0rxVoQxUpJrP/VjCAUkw6liA=
+		</data>
+		<key>FEKYC_VETC.storyboardc/FEKYCWelcomeVC.nib</key>
+		<data>
+		XfRUmDrCKmy/N1YP8dqQl1Gt8jM=
+		</data>
+		<key>FEKYC_VETC.storyboardc/Info.plist</key>
+		<data>
+		ODeuZcbYrnuXiGruW2SiaKsuiS4=
+		</data>
+		<key>FEKYC_VETC.storyboardc/LivenessUsingMLKitViewController.nib</key>
+		<data>
+		W+PR12wNhyOb8nsmOqpwAvUMXRk=
+		</data>
+		<key>FEKYC_VETC.storyboardc/PXQ-6p-nP5-view-azJ-y8-L4D.nib</key>
+		<data>
+		FRaDYhGSIpVwvSk83c41ZVvAOs4=
+		</data>
+		<key>FEKYC_VETC.storyboardc/ScanQrViewController.nib</key>
+		<data>
+		pgLday8zC6XChLzDjOrAChLkSBs=
+		</data>
+		<key>FEKYC_VETC.storyboardc/SelectEKYCTypeViewController.nib</key>
+		<data>
+		6EwUEEFnBiKOwba6gzTamrDyYKY=
+		</data>
+		<key>FEKYC_VETC.storyboardc/TNW-Ah-CUp-view-b1F-wQ-Siv.nib</key>
+		<data>
+		rywWQwDJs4fmrLh4VqYydiInymg=
+		</data>
+		<key>FEKYC_VETC.storyboardc/ZVj-8D-Rwe-view-Ug9-0m-rrO.nib</key>
+		<data>
+		nVPoiA5L1PYSoo5AjW3qRHcYRXE=
+		</data>
+		<key>FEKYC_VETC.storyboardc/fbs-yH-8VP-view-mcw-Ke-McP.nib</key>
+		<data>
+		SVJDMs7+pg6z22JlLMS9VZq7gDs=
+		</data>
+		<key>FEKYC_VETC.storyboardc/ksQ-ry-qJ2-view-KdZ-s3-i0p.nib</key>
+		<data>
+		ohf2qU6hCmYemqfnrNVpJYzDhiE=
+		</data>
+		<key>FEKYC_VETC.storyboardc/mB7-iA-RZI-view-Ky4-hJ-90Y.nib</key>
+		<data>
+		e6gvqd5Nh0Qqxv/NsFayzT43jC4=
+		</data>
+		<key>FEKYC_VETC.storyboardc/vKU-H8-bW2-view-2jR-tf-gi1.nib</key>
+		<data>
+		tH65t9ZyDMl88UXoXyN551gdXmU=
+		</data>
+		<key>FEKYC_VETC.storyboardc/vmx-rV-yEd-view-wX7-Se-nFb.nib</key>
+		<data>
+		a2N2Ozzoy2V69Q+K2JdlAbyCyvo=
+		</data>
+		<key>FEKYC_VETC.storyboardc/xl7-jk-Qxm-view-h4f-1q-gX9.nib</key>
+		<data>
+		fokWszVl362KxAv7vHf3bIqFaUM=
+		</data>
+		<key>FEKYC_VETC.storyboardc/ytj-4x-flO-view-UQq-aB-II5.nib</key>
+		<data>
+		EAlPuYHTDWAouMTf0hgsGhKm760=
+		</data>
+		<key>FEKYC_VETC.storyboardc/zQv-M4-tm5-view-b8k-vx-BXF.nib</key>
+		<data>
+		mcUn3dh8EKiKfqebw1exs40RBr0=
+		</data>
 		<key>Headers/eKYC-Swift.h</key>
 		<data>
-		PWk5ECmi+gZwuKRdtt95Rz6ggHY=
+		n0ixC9UWgZ1cIl5Bh0fe7HcqUe8=
 		</data>
 		<key>Headers/eKYC-umbrella.h</key>
 		<data>
@@ -14,19 +138,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PYXsyogCCcKPOZoL/RfFhJdnaqk=
+		7BOHPrKcP18mqwV6dNeoOH210qI=
 		</data>
 		<key>Modules/eKYC.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		lp8YAUHntMi3jSq5xNTFJsuUnss=
+		enuSxbQuByqp8CRPGLpWzsn5Ihw=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		9eNzyaO3kKVMO0Qo+OCRdA4uOHY=
+		90re8k87plF4JQys/r6Wp4nWCws=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		5e/ke5PdtPWrx5w8YiKtTUFKoVI=
+		CTObuBydYKNpTLzWR/wyR6Ast4g=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +158,11 @@
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		5e/ke5PdtPWrx5w8YiKtTUFKoVI=
+		CTObuBydYKNpTLzWR/wyR6Ast4g=
 		</data>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tRX2ratSjMIP2SAcmYoEjTrAcN8=
+		aVO7hCv3NOY9S6WB2ynmXl8GGvc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,15 +171,356 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>FEKYC_VETC.storyboardc/0Ka-gZ-90x-view-RSJ-nx-QtS.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			93YkblGDgl2xZR1aUlVn0dCnpLk=
+			</data>
+			<key>hash2</key>
+			<data>
+			D6xGxNhWyDcroVC2lScEv7nbBXvB4pwq+vBfHz6lRP4=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/3eV-9f-Weg-view-zrw-ei-PHR.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hZVjc6lk5CcMhCRkPjGqdcr9nfQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			dsJgebRzefNjSadkLSKprnl1euO3ZYh7BhDwgxRY6k0=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/4CS-nZ-gZh-view-ffE-eL-xCp.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wTE2r8s/FscbsYN0tROGomI6Qyo=
+			</data>
+			<key>hash2</key>
+			<data>
+			yqEOBLj6Iq8O6aT8H3oy2oBlF/PowFt448/vu7zSzoE=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/C2r-T0-4YP-view-Ytf-gw-vVv.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JxLSDMXaqC5eKbxYQvqQoxY59eU=
+			</data>
+			<key>hash2</key>
+			<data>
+			d5ioyVH5QMd+xcayClPfIvK+RbDrjSXd9pVAcwYyjZk=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCBankPhotoViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EnMZhTrY69GRtMGmc7Gne9BC/Ec=
+			</data>
+			<key>hash2</key>
+			<data>
+			laRWPqV2VDuwenXpGEh93h5JKhaxSDzmoYf5sVtm/5k=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCDocumentRecognizeViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BII8m98qyqbulzudo5E9DT4cnZk=
+			</data>
+			<key>hash2</key>
+			<data>
+			s/kjzM6ui4u6UlRk0skoD/eU40MHK5WlamgBivo80I0=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCFailResultViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yDTCGuOTbOrSfmoq45HQ8Aqdv5w=
+			</data>
+			<key>hash2</key>
+			<data>
+			wdFrvr136TxvlQ21eA1b2wqqpvusOg2Maf6P9g3LlPs=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCGuideLivenessViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tOTrnQlVXLacJa8YLQqUJ4TYwps=
+			</data>
+			<key>hash2</key>
+			<data>
+			5ixIC8UsCcviKaPfkf0SLad2jPhdby/JOuNct0L2keU=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCLivenessMLKitViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E5jdW6e38UHZLV6AWYH17b5O8H0=
+			</data>
+			<key>hash2</key>
+			<data>
+			8bn1AfK1PiWRfwtFvC4QMSXF5lNsnWCKFphakxU5HBc=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCLivenessViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CvRXTJy7MLymBoUVL7KGsNuVo7U=
+			</data>
+			<key>hash2</key>
+			<data>
+			s+C8z43jnjDXE6C0QDM6jKLZNCb6lRXAOag2d29YOyY=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCPhotoViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M7DnN2HvvcpDybkJUjZHhExJHI0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ENs8F0his50P+Sl8qqgVeW6WyQ/LyFZSjQ2zlO3cEzg=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCReadNFCViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WhLWV3Ra93O8Z0lispJecRkKRQ0=
+			</data>
+			<key>hash2</key>
+			<data>
+			yruXu3aZoaiuy5+c3KbjXceyY10lArEnrOj4xXPHaHA=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCResultTableViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VJG75fN3o0S/EjZ1VeOpNxXk1HA=
+			</data>
+			<key>hash2</key>
+			<data>
+			5SX+bjNeWeIXGwfi0/nEaUXhlBvNHKdT1oRA5B1YdGI=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCSuccessPopupVC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3NX20Us+ntI3LxzOVc4/C7srt4w=
+			</data>
+			<key>hash2</key>
+			<data>
+			z9DaEO3i3BsMA27trUJZknXoO4vMFk1q57XAwpV5cjE=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCTakeSelfieViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TXw0rxVoQxUpJrP/VjCAUkw6liA=
+			</data>
+			<key>hash2</key>
+			<data>
+			KAEcG2iFxkCmBztKpIJULd/FHp8XTf+j8yNqRsysb4E=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/FEKYCWelcomeVC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XfRUmDrCKmy/N1YP8dqQl1Gt8jM=
+			</data>
+			<key>hash2</key>
+			<data>
+			YvjGfVsm3gm5hMyv+WKBz4zI3hGnKGKfFHPX8b/Nxk8=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODeuZcbYrnuXiGruW2SiaKsuiS4=
+			</data>
+			<key>hash2</key>
+			<data>
+			H5NzW2zX4PG9b3tiuEfyJ8v+M+Dttgwd8HRbEW7JmeQ=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/LivenessUsingMLKitViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W+PR12wNhyOb8nsmOqpwAvUMXRk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xhUaHjdCqmdLye0ByaCacHh6wFd58zI0lS10qOTtPoM=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/PXQ-6p-nP5-view-azJ-y8-L4D.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FRaDYhGSIpVwvSk83c41ZVvAOs4=
+			</data>
+			<key>hash2</key>
+			<data>
+			CJwD64Vtwnvsm8Gh99tTKhEn6F24MKsq0VF1kyRL2Yg=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/ScanQrViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pgLday8zC6XChLzDjOrAChLkSBs=
+			</data>
+			<key>hash2</key>
+			<data>
+			BVkhUkr0xqL2xnKf7qXR7u71/mjZNieKncxEEqiyYGY=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/SelectEKYCTypeViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6EwUEEFnBiKOwba6gzTamrDyYKY=
+			</data>
+			<key>hash2</key>
+			<data>
+			TyRwrsDF3AnEoTCIRgmTL8Dy6/DNYl9izF/BboHZmwo=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/TNW-Ah-CUp-view-b1F-wQ-Siv.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rywWQwDJs4fmrLh4VqYydiInymg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZmtICrw8jkFHFUVtNQm0tHcb11aNHrMTbKplQh0o2Lg=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/ZVj-8D-Rwe-view-Ug9-0m-rrO.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nVPoiA5L1PYSoo5AjW3qRHcYRXE=
+			</data>
+			<key>hash2</key>
+			<data>
+			W8k3tZwBeCRkNraawHGcA750Wuqh8v7Sb2XNqc12S20=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/fbs-yH-8VP-view-mcw-Ke-McP.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SVJDMs7+pg6z22JlLMS9VZq7gDs=
+			</data>
+			<key>hash2</key>
+			<data>
+			eH3Sn0Cfn0xN8RVSHfiyzy5liAGPSkK3fCXtulpdQ4I=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/ksQ-ry-qJ2-view-KdZ-s3-i0p.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ohf2qU6hCmYemqfnrNVpJYzDhiE=
+			</data>
+			<key>hash2</key>
+			<data>
+			2JoRZ0daUUHChdTO59k3Oxyt2758mQlJlpw5hAXbNis=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/mB7-iA-RZI-view-Ky4-hJ-90Y.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e6gvqd5Nh0Qqxv/NsFayzT43jC4=
+			</data>
+			<key>hash2</key>
+			<data>
+			cKBO0OQyQeXwDjhSwK32IqCnP1edYNvN84LJFD0MznI=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/vKU-H8-bW2-view-2jR-tf-gi1.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tH65t9ZyDMl88UXoXyN551gdXmU=
+			</data>
+			<key>hash2</key>
+			<data>
+			M/Ef+EsgbLrX3jkcIk/LtJCP/SfkWy0cS6HlMk4kk0U=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/vmx-rV-yEd-view-wX7-Se-nFb.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a2N2Ozzoy2V69Q+K2JdlAbyCyvo=
+			</data>
+			<key>hash2</key>
+			<data>
+			7HIWeWAOAug6hpZL5mY4hBdYy2yEcoE4v16CJJCy6c0=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/xl7-jk-Qxm-view-h4f-1q-gX9.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fokWszVl362KxAv7vHf3bIqFaUM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4UiOFvbP8SDihZD6llWD1J7eTi6xQldo8GBNE8u0AqM=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/ytj-4x-flO-view-UQq-aB-II5.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EAlPuYHTDWAouMTf0hgsGhKm760=
+			</data>
+			<key>hash2</key>
+			<data>
+			PFrfqkLpPFVPfORL3u91df9M2xuwDvkd73/hRb3dFcE=
+			</data>
+		</dict>
+		<key>FEKYC_VETC.storyboardc/zQv-M4-tm5-view-b8k-vx-BXF.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mcUn3dh8EKiKfqebw1exs40RBr0=
+			</data>
+			<key>hash2</key>
+			<data>
+			o7pqJWM1EIoprhHVaqNiSCZCpg5Kc4wRKQPM+704N/8=
+			</data>
+		</dict>
 		<key>Headers/eKYC-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PWk5ECmi+gZwuKRdtt95Rz6ggHY=
+			n0ixC9UWgZ1cIl5Bh0fe7HcqUe8=
 			</data>
 			<key>hash2</key>
 			<data>
-			1MePCcS24t0bGS98LlLEpbgzpvHY1sEhqcxp+3692r8=
+			QaT9Oa7WhDHWrM2OOxbKkDiHF8/VarHiIkY50TFUSB0=
 			</data>
 		</dict>
 		<key>Headers/eKYC-umbrella.h</key>
@@ -73,33 +538,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lp8YAUHntMi3jSq5xNTFJsuUnss=
+			enuSxbQuByqp8CRPGLpWzsn5Ihw=
 			</data>
 			<key>hash2</key>
 			<data>
-			M5apdrcB8YUks+ttyuPDDtqMdOLMCvvLLTTVZtZtJTY=
+			zm3TbE6/SuMCkAN0y33nxjjtx7WokBr5GdKDN/lqtpE=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9eNzyaO3kKVMO0Qo+OCRdA4uOHY=
+			90re8k87plF4JQys/r6Wp4nWCws=
 			</data>
 			<key>hash2</key>
 			<data>
-			qIcb/8RW4Zw6NZg1QNgz+HQOWNsXKpoLfXNXuQxxp4Q=
+			Y7ZBvIme3O5tQRsOBlWuqc2QFU55ah2mkSPeRFOo1C4=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5e/ke5PdtPWrx5w8YiKtTUFKoVI=
+			CTObuBydYKNpTLzWR/wyR6Ast4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			mCb7bkhp6ZnfWKGxSmu7INdP91n3SfWxHZZu4O+dD1I=
+			AlhBdWU0Xc7Upzl7vNiIy4KYuZxkayu2ErFhXnpkiEQ=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -117,22 +582,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5e/ke5PdtPWrx5w8YiKtTUFKoVI=
+			CTObuBydYKNpTLzWR/wyR6Ast4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			mCb7bkhp6ZnfWKGxSmu7INdP91n3SfWxHZZu4O+dD1I=
+			AlhBdWU0Xc7Upzl7vNiIy4KYuZxkayu2ErFhXnpkiEQ=
 			</data>
 		</dict>
 		<key>Modules/eKYC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tRX2ratSjMIP2SAcmYoEjTrAcN8=
+			aVO7hCv3NOY9S6WB2ynmXl8GGvc=
 			</data>
 			<key>hash2</key>
 			<data>
-			RwXPNXv3f8AhDjkBk4dGqmEXhO8XAhVxva7Qyvn2SoE=
+			EvrJ+n877nFB0D+0+I81mYJeV3FhS6+sWpQ/kGQLw7s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

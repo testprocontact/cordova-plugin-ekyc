@@ -59,6 +59,8 @@
 "text_is_validating" = "We are validating...";
 "text_front" = "Front";
 "text_back" = "Back";
+"text_front1" = "front";
+"text_back1" = "back";
 "text_selca" = "Selfie";
 "text_profile" = "C06";
 
@@ -131,7 +133,7 @@
 "driver_front_title" = "Giấy phép lái xe (Mặt trước)";
 "driver_back_title" = "Giấy phép lái xe (Mặt sau)";
 "passport_title" = "Hộ chiếu";
-"capture_suggestion" = "Please keep document in camera area";
+"capture_suggestion" = "Please keep document in capture area";
 "next" = "Next";
 "recapture" = "Take again";
 "video_title" = "Record your face";
@@ -261,7 +263,7 @@
 "kyc_doc_verification_title"="Document Verification";
 
 "key_brightspot"="Bright spot";
-"key_centerpaper"="Put the papers in the middle";
+"key_centerpaper"="ID Center";
 "key_takeback"="Take a photo of the back";
 "key_takefront"="Take a photo of the front";
 "key_id_wrong"="Invalid Document";
@@ -298,6 +300,31 @@
 "fci_guide_require1live"="No hat";
 
 "fci_guide_done1"="Understood";
-"ssi_guide_title"="Instructions for reading Citizen Identification cards using non-touch technology (NFC)";
-"ssi_guide_des1"="Step 1: Touch the back of the phone to the Chip section on the back of the CCCD card (yellow area on the illustration)";
-"ssi_guide_des2"="Step 2: Keep the CCCD and phone still while the notification screen is reading the information.";
+
+"ssi_guide_title"="How to scan information on your ID card with NFC technology";
+"ssi_guide_des1"="Step 1: Touch the button “Scan chip card with NFC“";
+"ssi_guide_des2"="Step 2: Touch the copper chip of the ID card to the NFC reading position on the back of your phone as illustrated.";
+"ssi_guide_des3"="Step 3: Hold your ID card and phone still while the application is reading your information.";
+"ssi_guide_note"="Note: If the “Capture the string on ID card's back“ does not have a green tick, please touch this button and follow the instructions before touching the button “Scan chip card with NFC“.";
+
+"guide_des_nfc1" = "Touch the copper chip on the CCCD to the NFC reader on the back of the phone";
+"guide_des_nfc2" = "Hold the CCCD and the phone steady when the notification screen is reading information";
+
+"wrong_qrcode" = "OCR results do not match. Please rescan the qrcode or take a photo of the document";
+
+"ssiStep1"="ID card";
+"ssiStep2"="Scan NFC";
+"ssiStep3"="Video";
+
+"ssiStepScanMrz"="Capture the string on ID card's back";
+"ssiStepScanNfc"="Scan chip card with NFC";
+
+"key_left"="Left";
+"key_right"="Right";
+"key_straight"="Straight";
+
+"ssi_key_mrz1" = "Please recapture the back of your chipped ID card";
+"ssi_key_mrz2" = "Note: focus on the area as illustrated.";
+
+"key_nfc_error"= "NFC scanning failed, you may skip this action and complete it later";
+"key_none_paper"="Unsupported document type";
