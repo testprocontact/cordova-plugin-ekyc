@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name eKYC
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -19,6 +19,7 @@ import Lottie
 import OSLog
 import OpenSSL
 import Photos
+import PhotosUI
 import Swift
 import TensorFlowLite
 import UIKit
@@ -26,6 +27,7 @@ import Vision
 import VisionKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_exported import eKYC
 @_hasMissingDesignatedInitializers @available(iOS 13, *)
 public class ActiveAuthenticationInfo : eKYC.SecurityInfo {
@@ -407,15 +409,11 @@ public class DocumentModel {
   public var activeAuthenticationSignature: [Swift.UInt8] {
     get
   }
-  public var verificationErrors: [Swift.Error] {
+  public var verificationErrors: [any Swift.Error] {
     get
   }
-  public var challenge: Swift.String {
-    get
-  }
-  public var aAResult: Swift.String {
-    get
-  }
+  public var challenge: Swift.String
+  public var aAResult: Swift.String
   public var isPACESupported: Swift.Bool {
     get
   }
@@ -439,7 +437,9 @@ public class DocumentModel {
   public func dumpIdDocumentData(selectedDataGroups: [eKYC.DataGroupId], carđetail: [Swift.String : Any], image: UIKit.UIImage, includeActiveAuthenticationData: Swift.Bool = true) -> eKYC.MultipartRequest
   public func setDataIdDocumentData(selectedDataGroups: [eKYC.DataGroupId], carđetail: [Swift.String : Any], image: UIKit.UIImage, includeActiveAuthenticationData: Swift.Bool = true) -> [Swift.String : Swift.String]
   public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [eKYC.DataGroupId : [Swift.UInt8]]
-  public func verifyDocument(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func verifyDocument(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false) async throws
+  #endif
   public func verifyActiveAuthentication(challenge: [Swift.UInt8], signature: [Swift.UInt8])
   @objc deinit
 }
@@ -457,7 +457,7 @@ public class DocumentReader : ObjectiveC.NSObject {
 @available(iOS 13, *)
 extension eKYC.DocumentReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
-  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
 }
 extension eKYC.EmirIndicator {
@@ -619,8 +619,8 @@ extension eKYC.FCILoadingIndicator {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class FEKYC : ObjectiveC.NSObject {
   @objc convenience public init(config: eKYC.FEKYCConfig)
   @objc public static func resetSession()
-  @objc public static func startFPTEKYCFlow(withConfig config: eKYC.FEKYCConfig, from viewController: UIKit.UIViewController, completion: @escaping ([Swift.String : Any]?) -> Swift.Void)
-  @objc public static func startFPTEKYCFlowLiveness(withConfig config: eKYC.FEKYCConfig, from viewController: UIKit.UIViewController, completion: @escaping ([Swift.String : Any]?) -> Swift.Void)
+  @objc public static func startFPTEKYCFlow(withConfig config: eKYC.FEKYCConfig, from viewController: UIKit.UIViewController, onSuccess: @escaping ([Swift.String : Any]?) -> Swift.Void, onFail: @escaping ([Swift.String : Any]?, Swift.String?) -> Swift.Void, onTracking: @escaping (Swift.String?) -> Swift.Void)
+  @objc public static func startFPTEKYCFlowLiveness(withConfig config: eKYC.FEKYCConfig, from viewController: UIKit.UIViewController, onSuccess: @escaping ([Swift.String : Any]?) -> Swift.Void, onFail: @escaping ([Swift.String : Any]?, Swift.String?) -> Swift.Void, onTracking: @escaping (Swift.String?) -> Swift.Void)
   public class func version() -> Swift.String
   @objc deinit
 }
@@ -641,7 +641,6 @@ public struct MultipartRequest {
   }
 }
 @objc public class FEKYCConfig : ObjectiveC.NSObject {
-  public var apiKey: Swift.String
   public var privateKey: Swift.String
   public var clientUUID: Swift.String?
   public var urlFrontImage: Swift.String
@@ -650,7 +649,6 @@ public struct MultipartRequest {
   public var environment: eKYC.FEKYCEnvironment?
   public var themes: eKYC.FEKYCThemes?
   public var livenessType: Swift.Int?
-  public var errorNfc: Swift.Int?
   public var ocrTypes: [eKYC.FEKYCOcrType]
   public var isShowResult: Swift.Bool?
   public var themeColor: UIKit.UIColor
@@ -669,11 +667,13 @@ public struct MultipartRequest {
   public var apiInfo: Swift.String?
   public var sessionId: Swift.String?
   public var livenessWithoutBE: Swift.Bool?
-  @objc public init(apiKey: Swift.String, jwt: Swift.String? = "", cardId: Swift.String? = "", flowBank: eKYC.FEKYCBankFlow = .info, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, language: Swift.String = "", countryCode: Swift.String = "vn", themes: eKYC.FEKYCThemes = .light, setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:])
-  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:])
-  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", urlFrontImage: Swift.String = "", urlBackImage: Swift.String = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", themes: eKYC.FEKYCThemes = .light, headers: [Swift.String : Swift.String]? = [:])
-  @objc public init(apiKey: Swift.String, flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = 1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", themes: eKYC.FEKYCThemes = .light, headers: [Swift.String : Swift.String]? = [:])
-  public init(apiKey: Swift.String, clientUUID: Swift.String = UUID().uuidString, ocrTypes: eKYC.FEKYCOcrType = .nfc, isShowResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [], themes: eKYC.FEKYCThemes = .light, setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:])
+  public var errorNfc: Swift.Int
+  public func setApiKey(apiKey: Swift.String)
+  @objc public init(apiKey: Swift.String, jwt: Swift.String? = "", cardId: Swift.String? = "", clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, language: Swift.String = "", countryCode: Swift.String = "vn", themes: eKYC.FEKYCThemes = .light, setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:], nfcAmount: Swift.Int = 0, titleData: [Swift.String : Swift.String]? = [:], facingBack: Swift.Bool = false)
+  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = -1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:], nfcAmount: Swift.Int = 0, titleData: [Swift.String : Swift.String]? = [:], facingBack: Swift.Bool = false)
+  @objc public init(apiKey: Swift.String, sessionId: Swift.String? = "", flow: Swift.String? = "", urlFrontImage: Swift.String = "", urlBackImage: Swift.String = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = -1, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", themes: eKYC.FEKYCThemes = .light, headers: [Swift.String : Swift.String]? = [:], nfcAmount: Swift.Int = 0, titleData: [Swift.String : Swift.String]? = [:], facingBack: Swift.Bool = false)
+  @objc public init(apiKey: Swift.String, flow: Swift.String? = "", sessionId: Swift.String? = "", isFullFlow: Swift.Bool = true, clientUUID: Swift.String = UUID().uuidString, ocrTypes: Foundation.NSArray = [], environment: eKYC.FEKYCEnvironment = .product, livenessType: Swift.Int = -1, livenessWithoutBE: Swift.Bool = false, onlyDoccument: Swift.Bool = false, breakFlow: Swift.Bool = false, isShowResult: Swift.Bool = false, submitResult: Swift.Bool = false, language: Swift.String = "", countryCode: Swift.String = "vn", customInfo: [Swift.String : Any]? = [:], setBaseUrl: Swift.String? = "", themes: eKYC.FEKYCThemes = .light, headers: [Swift.String : Swift.String]? = [:], nfcAmount: Swift.Int = 0, titleData: [Swift.String : Swift.String]? = [:], facingBack: Swift.Bool = false)
+  public init(apiKey: Swift.String, clientUUID: Swift.String = UUID().uuidString, ocrTypes: eKYC.FEKYCOcrType = .nfc, isShowResult: Swift.Bool = false, nfcHasLiveness: Swift.Bool? = false, verifyType: Swift.Int = 1, environment: eKYC.FEKYCEnvironment = .product, language: Swift.String? = "", documentData: [[Swift.String : Any]]? = [], themes: eKYC.FEKYCThemes = .light, setBaseUrl: Swift.String? = "", headers: [Swift.String : Swift.String]? = [:], nfcAmount: Swift.Int = 0, titleData: [Swift.String : Swift.String]? = [:], facingBack: Swift.Bool = false)
   @objc deinit
 }
 public struct FEKYCColor {
@@ -708,6 +708,16 @@ public struct FEKYCColor {
     get
   }
 }
+@objc public enum FEKYCTypeBack : Swift.Int {
+  case ocr
+  case nfc
+  case liveness
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc public enum FEKYCBankStatusCapture : Swift.Int {
   case front
   case left
@@ -729,6 +739,8 @@ public struct FEKYCColor {
   case ssi
   case acbs
   case vetc
+  case fss
+  case mbs
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -771,17 +783,6 @@ public struct FEKYCColor {
     get
   }
 }
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
-}
-extension eKYC.SSIInficator {
-  @_Concurrency.MainActor(unsafe) public class func dismiss()
-  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil)
-  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil, _ height: CoreFoundation.CGFloat, _ width: CoreFoundation.CGFloat)
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SSIInficator : UIKit.UIView {
-  @objc deinit
-}
 public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case verbose
   case debug
@@ -809,23 +810,6 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   public class func warning(_ msg: @autoclosure () -> Swift.String)
   public class func error(_ msg: @autoclosure () -> Swift.String)
   public class func clearStoredLogs()
-  @objc deinit
-}
-extension eKYC.SunlifeIndicator {
-  @_Concurrency.MainActor(unsafe) public class var colorBackground: UIKit.UIColor {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) public class var color: UIKit.UIColor {
-    get
-    set
-  }
-}
-extension eKYC.SunlifeIndicator {
-  @_Concurrency.MainActor(unsafe) public class func dismiss()
-  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil)
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SunlifeIndicator : UIKit.UIView {
   @objc deinit
 }
 public struct MRZParser {
@@ -1009,7 +993,7 @@ public class NFCPassportModel {
   public var activeAuthenticationSignature: [Swift.UInt8] {
     get
   }
-  public var verificationErrors: [Swift.Error] {
+  public var verificationErrors: [any Swift.Error] {
     get
   }
   public var isPACESupported: Swift.Bool {
@@ -1145,7 +1129,7 @@ public class PassportReader : ObjectiveC.NSObject {
 @available(iOS 13, *)
 extension eKYC.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
-  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
 }
 public func binToHexRep(_ val: [Swift.UInt8], asArray: Swift.Bool = false) -> Swift.String
@@ -1196,6 +1180,9 @@ public struct ResponseAPDU {
   public var sw2: Swift.UInt8
   public init(data: [Swift.UInt8], sw1: Swift.UInt8, sw2: Swift.UInt8)
 }
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
 public enum SecureMessagingSupportedAlgorithms {
   case DES
   case AES
@@ -1233,6 +1220,14 @@ public class SimpleASN1DumpParser {
   public func test()
   @objc deinit
 }
+extension eKYC.SSIInficator {
+  @_Concurrency.MainActor(unsafe) public class func dismiss()
+  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil, _ height: CoreFoundation.CGFloat, _ width: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SSIInficator : UIKit.UIView {
+  @objc deinit
+}
 extension Swift.Optional where Wrapped == Swift.String {
   public var isNotNilAndEmpty: Swift.Bool {
     get
@@ -1240,6 +1235,23 @@ extension Swift.Optional where Wrapped == Swift.String {
   public var isNilOrEmpty: Swift.Bool {
     get
   }
+}
+extension eKYC.SunlifeIndicator {
+  @_Concurrency.MainActor(unsafe) public class var colorBackground: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public class var color: UIKit.UIColor {
+    get
+    set
+  }
+}
+extension eKYC.SunlifeIndicator {
+  @_Concurrency.MainActor(unsafe) public class func dismiss()
+  @_Concurrency.MainActor(unsafe) public class func show(_ status: Swift.String? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SunlifeIndicator : UIKit.UIView {
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, *)
 public class TagReader {
@@ -1337,6 +1349,9 @@ extension eKYC.FEKYCVerifyType : Swift.RawRepresentable {}
 extension eKYC.FEKYCEnvironment : Swift.Equatable {}
 extension eKYC.FEKYCEnvironment : Swift.Hashable {}
 extension eKYC.FEKYCEnvironment : Swift.RawRepresentable {}
+extension eKYC.FEKYCTypeBack : Swift.Equatable {}
+extension eKYC.FEKYCTypeBack : Swift.Hashable {}
+extension eKYC.FEKYCTypeBack : Swift.RawRepresentable {}
 extension eKYC.FEKYCBankStatusCapture : Swift.Equatable {}
 extension eKYC.FEKYCBankStatusCapture : Swift.Hashable {}
 extension eKYC.FEKYCBankStatusCapture : Swift.RawRepresentable {}

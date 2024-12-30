@@ -21,6 +21,7 @@
 "err_tag_not_valid" = "Thẻ không hợp lệ.";
 "err_more_than_1_tag" = "Tìm thấy nhiều hơn 1 thẻ. Xin hãy cung cấp duy nhất 1 thẻ.";
 "err_connection" = "Lỗi kết nối. Xin vui lòng thử lại!";
+"err_authen" = "Xác thực chip lỗi";
 "err_mrz_not_valid" = "Có lỗi xảy ra, vui lòng quét lại MRZ";
 "err_common_problem" = "Đã có lỗi xảy ra trong quá trình đọc thẻ, xin vui lòng thử lại!";
 "err_specific_problem" = "Đã có lỗi trong quá trình đọc thẻ.";
@@ -267,6 +268,7 @@ vùng chụp";
 "kyc_doc_verification_title"="Xác thực giấy tờ";
 
 "key_brightspot"="Bóng sáng";
+"key_blur"="Bị mờ";
 "key_centerpaper"="Đưa giấy tờ vào giữa";
 "key_takeback"="Chụp mặt sau";
 "key_takefront"="Chụp mặt trước";
@@ -330,4 +332,23 @@ vùng chụp";
 
 "key_nfc_error"= "Quét NFC thất bại, bạn có thể bỏ qua để thực hiện sau";
 
-"key_none_paper"="Loại giấy tờ không được hỗ trợ";
+"key_none_paper"="Vui lòng đưa giấy tờ vào khung hình";
+"key_not_paper"="Vui lòng đưa giấy tờ vào khung hình";
+
+"vetc_alert"="Dừng xác thực, bạn sẽ bỏ lỡ";
+"vetc_alert1"="Bạn đang trong quá trình xác thực, bạn chắc chắn muốn dừng lại?";
+"vetc_des1"="An toàn bảo mật";
+"vetc_des2"="Thanh toán đa dịch vụ";
+"vetc_des3"="Nạp, rút miễn phí";
+
+"alertBack_des1"="An toàn bảo mật";
+"alertBack_des2"="Quyền lợi khách hàng";
+"alertBack_des3"="Trải nghiệm tốt hơn";
+
+"vetc_goon"="Tiếp tục";
+"vetc_pause"="Dừng";
+"liveness_guide_16" = "Vui lòng không nhắm mắt";
+
+"vetc_error_mrz" = "Có lỗi xảy ra, vui lòng chụp lại số mặt sau giấy tờ";
+
+"text_ocr_ssi" = "Chụp ảnh CC/CCCD gắn chip";

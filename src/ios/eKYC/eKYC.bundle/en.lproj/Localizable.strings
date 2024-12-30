@@ -20,6 +20,7 @@
 "err_tag_not_valid" = "Tag not valid.";
 "err_more_than_1_tag" = "More than 1 tags was found. Please present only 1 tag.";
 "err_connection" = "Connection error. Please try again.";
+"err_authen" = "Chip Authentication Failed";
 "err_mrz_not_valid" = "An error occurred, please rescan MRZ";
 "err_common_problem" = "Sorry, there was a problem reading the identity card. Please try again!";
 "err_specific_problem" = "Sorry, there was a problem reading the chip.";
@@ -250,7 +251,7 @@
 "ocr_description_guide_key" = "Please take document photo to verify your information";
 "ocr_description2_guide_key" = "Please use original, intact and expired documents";
 "ocr_description3_guide_key" = "Shoot in a well-lit environment, don't take photos that are too blurry or out of focus";
-"ocr_title_wrong_key" = "Photo not invalid";
+"ocr_title_wrong_key" = "Photo invalid";
 "ocr_takepicture_key" = "Take Photo";
 "ocr_title_guide_key" = "Personal documents";
 
@@ -263,6 +264,7 @@
 "kyc_doc_verification_title"="Document Verification";
 
 "key_brightspot"="Bright spot";
+"key_blur"="Blur";
 "key_centerpaper"="ID Center";
 "key_takeback"="Take a photo of the back";
 "key_takefront"="Take a photo of the front";
@@ -327,4 +329,20 @@
 "ssi_key_mrz2" = "Note: focus on the area as illustrated.";
 
 "key_nfc_error"= "NFC scanning failed, you may skip this action and complete it later";
-"key_none_paper"="Unsupported document type";
+"key_none_paper"="Please include paper in frame";
+"key_not_paper"="Please include paper in frame";
+"vetc_alert"="Stop Authentication, You Will Miss It";
+"vetc_alert1"="You are in the process of authentication, are you sure you want to stop?";
+"vetc_des1"="Security";
+"vetc_des2"="Multi-Service Payment";
+"vetc_des3"="Free Deposit, Withdrawal";
+"vetc_goon"="Continue";
+"vetc_pause"="Stop";
+"liveness_guide_16" = "Please do not close your eyes";
+
+"vetc_error_mrz" = "Có lỗi xảy ra, vui lòng chụp lại số mặt sau giấy tờ";
+"text_ocr_ssi" = "Take photo of chipped ID card";
+
+"alertBack_des1"="Safe and authorized transactions";
+"alertBack_des2"="Customer benefits";
+"alertBack_des3"="Better experience";

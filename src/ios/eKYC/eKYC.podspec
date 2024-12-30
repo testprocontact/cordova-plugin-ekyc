@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'eKYC'
-  s.version          = "3.7.2"
+  s.version          = "3.7.4"
   s.summary          = "eKYC SDK."
   s.description      = "Some sort of long description of the pod"
   s.homepage         = "http://fpt.ai/"

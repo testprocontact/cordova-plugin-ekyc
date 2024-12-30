@@ -31,7 +31,7 @@ four kinds of Vietnam identity documents as identity card (with and without chip
 ## Getting Started
 
 ### Prerequisites
-* Xcode 14.0 and above
+* Xcode 13.3 and above
 * Cocoapod v1.11.3
 * A physical iOS device
 * An Apple developer account
@@ -44,7 +44,7 @@ four kinds of Vietnam identity documents as identity card (with and without chip
 To integrate the eKYC into your Xcode project using CocoaPods, specify it in your Podfile:
 
 ```sh
-pod 'eKYC', :path => "./"
+pod 'eKYC', :path => "eKYC/"
 ```
 Replace the temporary path with the path that you place unzipped eKYC framework.
 > Relative paths can be used. In case you put the framework in the same directory as the Podfile, the above declaration is correct.
@@ -72,53 +72,130 @@ IDCardReader requires following keys in Info.plist:
 
 
 * Usage
+
+full eKYC:
+
+```
+            let config = FEKYCConfig(apiKey: "",
+                                                  sessionId:"",
+                                                  isFullFlow: true,
+                                                  clientUUID: UUID().uuidString,
+                                                  ocrTypes: NSArray(objects: FEKYCOcrType.idCard.rawValue),
+                                                  environment: .staging,
+                                      language: "vi",customInfo: EKYCConfigCustom().getCustomUI(),setBaseUrl: "", headers: ["key":"value"])
+
+                                FEKYC.startFPTEKYCFlow(withConfig: config5, from: v) { result in
+                print(result)
+            } onFail: { resultFail, errorString in
+                print(resultFail)
+            } onTracking: { tracking in
+                print(tracking)
+            }
 ```
 
-let config = FEKYCConfig(apiKey: "",
-                                    sessionId:"",
-                                      isFullFlow: true,
-                                      clientUUID: UUID().uuidString,
-                                      fullName: "",
-                                      ocrTypes: NSArray(objects: FEKYCOcrType.idCard.rawValue,
-                                                       FEKYCOcrType.driveLicense.rawValue,
-                                                       FEKYCOcrType.passport.rawValue),
-                                      environment: .product,
-                                      livenessType: 1,
-                                      onlyDoccument: false,
-                                      isScanQrCode : false,
-                                      isShowResult: false,
-                                      themeColor: nil,
-                                      nfcHasLiveness: false,
-                                      language:"",
-                                      countryCode: "vn")
+only NFC: 
+
+        var documentData :[[String:Any]] = []
+        var idNum : [String:Any] = [:]
+        idNum["key"] = "ID"
+        idNum["value"] = ""
         
-FEKYC.startFPTEKYCFlow(withConfig: config, from: self) { result in
-    print(result)
-}
-```
+        var dob : [String:Any] = [:]
+        dob["key"] = "Date of birth"
+        dob["value"] = ""
+        
+        var doe : [String:Any] = [:]
+        doe["key"] = "Expired Date"
+        doe["value"] = ""
+        documentData.append(idNum)
+        documentData.append(dob)
+        documentData.append(doe)
+        
+        let config = FEKYCConfig(apiKey: "",
+                                 ocrTypes: .nfc,
+                                 environment: .dev,
+                                 language: "vi",
+                                 documentData:documentData
+                                )
+            FEKYC.startFPTEKYCFlow(withConfig: config5, from: v) { result in
+                print(result)
+            } onFail: { resultFail, errorString in
+                print(resultFail)
+            } onTracking: { tracking in
+                print(tracking)
+            }
+
+only OCR:
+
+            let config = FEKYCConfig(apiKey: "",
+                                                  sessionId:"",
+                                                  isFullFlow: true,
+                                                  clientUUID: UUID().uuidString,
+                                                  ocrTypes: NSArray(objects: FEKYCOcrType.idCard.rawValue),
+                                                  environment: .dev,
+                                                  onlyDoccument: true,
+                                                  language: "vi")
+
+            FEKYC.startFPTEKYCFlow(withConfig: config5, from: v) { result in
+                print(result)
+            } onFail: { resultFail, errorString in
+                print(resultFail)
+            } onTracking: { tracking in
+                print(tracking)
+            }
+                                     
+only Liveness:
+
+        let config = FEKYCConfig(apiKey: "",
+                                 flow: "6",
+                                 environment: .dev,
+                                 livenessType: 1,
+                                 isShowResult:false,
+                                 language: "vi")
+        
+            FEKYC.startFPTEKYCFlow(withConfig: config5, from: v) { result in
+                print(result)
+            } onFail: { resultFail, errorString in
+                print(resultFail)
+            } onTracking: { tracking in
+                print(tracking)
+            }
 
 In which:
 - apiKey: is the key provided by FCI to a third party. The process of processing images and comparing information in documents and selfies will be done on FCI's server and provided in the form of public APIs. Only when owning a valid api key can the sdk be able to connect to the backend. Please contact FPT Smart Cloud for provision.
-- uuid: is the unique string which should be provided from client.
-- flow: is the name of version such as:
-    - 1: should not include NFC function
-    - 2||3: compare information that was read from NFC flow and from ocr. If the information is correct, the user can go through the next step. And vise versa.
-    - 4||5: verify card information that was read from NFC flow from the backend side.
-    you can login portal for set flow.
+- sessionId:
 - orcTypes: An array of document types that third parties want to provide to end users. Where .idCard is the citizen identification, excluding the function of reading information from chip card, .nfc is the citizen identification with the function of reading information from chip card, .driveLicense is for driving license, and finally .passport is for users who want to do eKYC with passport.
-- environment: is enviroment you want check (dev, stagging, product)
-- onlyDoccument : is a boolean variable, if true you can using OCR funtion and if false  you can all funtion in our SDK
-- isScanQrCode: is a boolean variable, if true you can scan qrcode on idcard with your device when ocr not scan qrcode, and false when you dont want scan qrcode on idcard
-- 
-- livenessType: is a way to compare the information in the document and the person performing the eKYC is the same or not. FCI provides 3 ways of confirmation, one is with a selfie photo, the other is with a close-up video and the third is providing liveness video with different face angles.
+- environment: .
 - The isShowResult is a boolean variable, if true, the details of the identity card will be displayed if the process of reading and retrieving information from the card is successful. The deafault value of this variable is 'true', means always show the result if the card is valid after verifying.
-- The isReturnPhoto is a boolean variable as well. If true, the SDK will return all photos during the eKYC process into the results.
-- limit: is a number which limits the times the user can be verified by the liveness api for a card reading turn. If this number is exceeded, the user can only go back to the first step. The default number is 5.
-- language : is your langue you want in sdk (vi, en)
-- countryCode : is your paper in country your want kyc
-- mainStoryboard: is your name file storyboard you want custom 
-- customInfo: is file your can download on portal. and copy file in your project (use: EKYCConfigCustom().getCustomUI())
 - The result, which will be returned in the closure, is the object contains personal information.
+- customInfo: is the info you download from portal, then copy to your project and config like example.
+
+
+Note: Because our SDk only support portrait. if your app support landscape then add following code:
+ Add this to Appdelegate:    
+ 
+  var orientationLock = UIInterfaceOrientationMask.all
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
+    }
+
+Add this from any swift class:
+struct AppUtility {
+    static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.orientationLock = orientation
+        }
+    }
+}
+
+When start SDK you add this: AppUtility.lockOrientation(.portrait) 
+and this: AppUtility.lockOrientation(.all) when receive resutl from sdk
+For example: 
+            AppUtility.lockOrientation(.portrait)
+            FEKYC.startFPTEKYCFlow(withConfig: config5, from: self) { result in
+                AppUtility.lockOrientation(.all)
+                print(result)
+            }
 
 
 <!-- LICENSE -->
@@ -145,5 +222,10 @@ Project Link: [https://github.com/](https://github.com/)
 
 During development, we consulted from the following sources:
 * [AndyQ/NFCPassportReader](https://github.com/AndyQ/NFCPassportReader)
+
+
+
+
+
 
 

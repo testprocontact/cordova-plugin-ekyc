@@ -28,16 +28,27 @@
     
     NSArray *ocrTypes = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:docType], nil];
     
-    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" urlFrontImage:urlFront urlBackImage:urlBack isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil setBaseUrl:@"" themes:FEKYCThemesLight headers:nil];
     
-    [FEKYC startFPTEKYCFlowWithConfig:config from:self.viewController completion:^(NSDictionary<NSString *,id> * _Nullable result) {
-        NSString *facematch = [NSString stringWithFormat:@"%@",[result valueForKey:@"facematch"]];
-        if (![facematch isEqualToString:@"(null)"] && ![facematch isEqualToString:@"<null>"] && facematch != nil) {
+    FEKYCConfig *config = [[FEKYCConfig alloc] initWithApiKey:apiKey sessionId:@"" flow:@"" urlFrontImage:urlFront urlBackImage:urlBack isFullFlow:YES clientUUID:uuid ocrTypes:ocrTypes environment:env livenessType:1 onlyDoccument:NO breakFlow:NO isShowResult:NO submitResult:NO language:@"vi" countryCode:@"vn" customInfo:nil setBaseUrl:@"" themes:FEKYCThemesLight headers:nil nfcAmount:9999 titleData:nil facingBack:NO];
+
+    [FEKYC startFPTEKYCFlowWithConfig:config from:self onSuccess:^(NSDictionary<NSString *,id> * _Nullable) {
+        NSString *liveData = [NSString stringWithFormat:@"%@",[result valueForKey:@"liveData"]];
+        if (![liveData isEqualToString:@"(null)"] && ![liveData isEqualToString:@"<null>"] && liveData != nil) {
             NSMutableDictionary *dictResult = [result mutableCopy];
             [self.viewController removeFromParentViewController];
             CDVPluginResult* resultCordova = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dictResult];
             [self.commandDelegate sendPluginResult:resultCordova callbackId:command.callbackId];
         }
+    } onFail:^(NSDictionary<NSString *,id> * _Nullable, NSString * _Nullable) {
+        NSString *liveData = [NSString stringWithFormat:@"%@",[result valueForKey:@"liveData"]];
+        if (![liveData isEqualToString:@"(null)"] && ![liveData isEqualToString:@"<null>"] && liveData != nil) {
+            NSMutableDictionary *dictResult = [result mutableCopy];
+            [self.viewController removeFromParentViewController];
+            CDVPluginResult* resultCordova = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dictResult];
+            [self.commandDelegate sendPluginResult:resultCordova callbackId:command.callbackId];
+        }
+    } onTracking:^(NSString * _Nullable) {
+        
     }];
 }
 
