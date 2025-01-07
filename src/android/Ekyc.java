@@ -48,15 +48,21 @@ public class Ekyc extends CordovaPlugin {
         int env = data.getInt(3);
         String front = null;
         String back = null;
+        String lang = "vi";
         if (data.length() >= 6) {
             front = data.getString(4);
             back = data.getString(5);
+            try {
+                lang = data.getString(6);
+            } catch (JSONException e) {
+                lang = "vi";
+            }
         }
         EkycSDK.Builder builder = new EkycSDK.Builder(cordova.getContext())
             .setUUID(uuid.isEmpty() ? UUID.randomUUID().toString() : uuid)
             .setApiKey(apiKey)
             .setEnvironment(env)
-            .setLang("vi")
+            .setLang(lang)
             .setTheme(true)
 			.setDocType(docType)
 			.addListener(new EkycSDK.CompleteListener() {

@@ -47,6 +47,7 @@
 "title_settings"= "Cài đặt";
 //
 "text_idcard" = "Căn cước công dân";
+"text_idcard_sunlife" = "Căn cước công dân";
 "text_idcard_front" = "Căn cước công dân (Mặt trước)";
 "text_idcard_back" = "Căn cước công dân (Mặt sau)";
 "text_license" = "Giấy phép lái xe";
@@ -57,6 +58,7 @@
 "text_front1" = "mặt trước";
 "text_back1" = "mặt sau";
 "text_selca" = "Chân dung";
+"text_selca_sunlife" = "Chân dung";
 "text_profile" = "C06";
 
 "text_license" = "Giấy phép lái xe";
@@ -217,6 +219,7 @@
 "key_step2" = "Bước 2";
 "key_read_nfc" = "Đọc thẻ NFC";
 "key_idcard" = "CMND/CCCD";
+"key_idcard_sunlife" = "CMND/CCCD";
 "ekyc_uploading" = "Đang tải…";
 "text_ocr" = "Xác thực tài khoản";
 "text_backside" = "Mặt sau";
@@ -225,6 +228,7 @@
 "key_next" = "Tiếp theo";
 "key_name" = "Họ và tên";
 "ekyc_fail" = "Ekyc thất bại";
+"ekyc_fail_mbs" = "Ekyc không thành công";
 "my_image_key" = "Ảnh của bạn";
 "pose_key" = "Ảnh minh họa";
 "nation_key" = "Dân tộc";
@@ -255,12 +259,15 @@
 "ocr_description3_guide_key" = "Chụp trong môi trường đủ ánh sáng, không chụp quá mờ mất góc hoặc lóa sáng";
 "ocr_title_wrong_key" = "Ảnh không hợp lệ nếu";
 "ocr_takepicture_key" = "Chụp ảnh";
+"ocr_takepicture_key_sunlife" = "Chụp ảnh";
 "ocr_title_guide_key" = "Giấy tờ tuỳ thân";
+"ocr_title_guide_key_sunlife" = "Giấy tờ tuỳ thân";
 
 "photo_title_guide_key" = "Chụp ảnh khuôn mặt";
 "photo_description_guide_key" = "Xin hãy giữ khuôn mặt nằm trong
 vùng chụp";
 "kyc_take_a_selfie"="Chụp ảnh chân dung";
+"kyc_take_a_selfie_sunlife"="Chụp ảnh chân dung";
 "kyc_guide_face_des"="Giữ khuôn mặt rõ nét bên trong khung hình";
 "kyc_guide_face_des3"="Vui lòng chụp giữ khuôn mặt rõ nét bên trong khung hình";
 "kyc_guide_face_des2"="Mặc trang phục phù hợp, không đeo kính mũ hoặc đeo khẩu trang";

@@ -49,6 +49,7 @@
 //
 "text_idcard_idn" = "KTP";
 "text_idcard" = "Identity card";
+"text_idcard_sunlife" = "Citizen ID";
 "text_idcard_front" = "Identity card (Front)";
 "text_idcard_back" = "Identity card (Back)";
 "text_license" = "Driving license";
@@ -63,6 +64,7 @@
 "text_front1" = "front";
 "text_back1" = "back";
 "text_selca" = "Selfie";
+"text_selca_sunlife" = "Portrait";
 "text_profile" = "C06";
 
 "2_card" = "Please make sure you only use one ID card during the eKYC process";
@@ -217,6 +219,7 @@
 "key_step2" = "Step 2";
 "key_read_nfc" = "Read NFC Tag";
 "key_idcard" = "ID Card";
+"key_idcard_sunlife" = "Citizen ID";
 "ekyc_uploading" = "Uploading…";
 "text_ocr" = "Account Verification";
 "text_backside" = "Backsize";
@@ -225,6 +228,7 @@
 "key_next" = "Next";
 "key_name" = "Name";
 "ekyc_fail" = "Ekyc failed";
+"ekyc_fail_mbs" = "Ekyc failed";
 "my_image_key" = "Your Selfie";
 "pose_key" = "Ideal Pose";
 
@@ -249,16 +253,20 @@
 "ocr_tiny_key" = "Small";
 "ocr_blur_key" = "Not Clear";
 "ocr_description_guide_key" = "Please take document photo to verify your information";
-"ocr_description2_guide_key" = "Please use original, intact and expired documents";
-"ocr_description3_guide_key" = "Shoot in a well-lit environment, don't take photos that are too blurry or out of focus";
+"ocr_description2_guide_key" = "Please use original, intact, and valid documents";
+"ocr_description3_guide_key" = "Take photos in a well-lit environment, avoid blurry images, missing corners, or glare";
 "ocr_title_wrong_key" = "Photo invalid";
 "ocr_takepicture_key" = "Take Photo";
+"ocr_takepicture_key_sunlife" = "Capture";
 "ocr_title_guide_key" = "Personal documents";
+"ocr_title_guide_key_sunlife" = "Identification document";
 
 "photo_title_guide_key" = "Face photography";
 "photo_description_guide_key" = "Please keep your face in the recording area";
 "kyc_take_a_selfie"="Take a Selfie";
+"kyc_take_a_selfie_sunlife"="Liveness detection";
 "kyc_guide_face_des"="The image should be clear and have your face fully inside the frame";
+"kyc_guide_face_des3"="Please take a clear video of your face within the frame";
 "kyc_guide_face_des2"="Wear appropriate clothing, do not wear glasses, hats or masks";
 "kyc_take_a_selfie_title"="Face Verification";
 "kyc_doc_verification_title"="Document Verification";
@@ -287,19 +295,19 @@
 
 "fci_guide_titleocr"="Instructions for taking identification documents";
 "fci_guide_des1ocr"="Please use original, intact and valid documents";
-"fci_guide_des2ocr"="Shoot in a well-lit environment, do not shoot too blurry, out of angle or blown out";
+"fci_guide_des2ocr"="Take photos in a well-lit environment, avoid blurry images, missin corners, or glare";
 
 "fci_guide_require1ocr"="No flare";
-"fci_guide_require2ocr"="Do not take photos out of angle";
-"fci_guide_require3ocr"="No obscured capture";
+"fci_guide_require2ocr"="No missing corners";
+"fci_guide_require3ocr"="No obstructions";
 
 "fci_guide_titlelive"="Face Authentication Guide";
 "fci_guide_des1live"="Please keep the face clearly inside the frame";
 "fci_guide_des1live"="Wear appropriate clothing, no glasses, hats or masks";
 
-"fci_guide_require1live"="Do not close your eyes";
-"fci_guide_require1live"="No glasses";
-"fci_guide_require1live"="No hat";
+"fci_guide_require1live"="No eyes closed";
+"fci_guide_require2live"="No glasses";
+"fci_guide_require3live"="No hat";
 
 "fci_guide_done1"="Understood";
 
