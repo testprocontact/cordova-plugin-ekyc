@@ -359,3 +359,4 @@ vùng chụp";
 "vetc_error_mrz" = "Có lỗi xảy ra, vui lòng chụp lại số mặt sau giấy tờ";
 
 "text_ocr_ssi" = "Chụp ảnh CC/CCCD gắn chip";
+"text_ocr_mbs" = "Chụp ảnh CCCD/CC";

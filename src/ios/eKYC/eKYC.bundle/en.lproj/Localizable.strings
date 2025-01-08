@@ -350,6 +350,7 @@
 
 "vetc_error_mrz" = "Có lỗi xảy ra, vui lòng chụp lại số mặt sau giấy tờ";
 "text_ocr_ssi" = "Take photo of chipped ID card";
+"text_ocr_mbs" = "Chụp ảnh CCCD/CC";
 
 "alertBack_des1"="Safe and authorized transactions";
 "alertBack_des2"="Customer benefits";
