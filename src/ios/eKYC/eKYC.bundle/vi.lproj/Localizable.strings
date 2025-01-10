@@ -35,6 +35,7 @@
 
 //api error
 "err_common_api" = "Kết nối gián đoạn.";
+"err_common_api_mbs" = "Có lỗi kết nối đến server, Quý khách vui lòng thử lại";
 "err_parse_json" = "Lỗi JSON.";
 
 //

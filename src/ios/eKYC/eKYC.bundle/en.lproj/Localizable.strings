@@ -33,6 +33,7 @@
 "err_unable_capture" = "Unable to capture media";
 
 "err_common_api" = "Server busy.";
+"err_common_api_mbs" = "Error connecting to server, please try again";
 "err_parse_json" = "JSON paring error.";
 
 //
